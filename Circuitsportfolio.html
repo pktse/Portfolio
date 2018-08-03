@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Circuits Portfolio </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body onload = "currentSlide(1)">
+    <ul id = "nav">
+      <li class = "nav"><a href = "index.html"> Home </a> </li>
+      <li class = "nav"><a href = "AboutMe.html"> About Me </a></li>
+      <li class = "nav"><a href = "index.html#contact"> Contact</a> </li>
+      <li class = "nav"><a href="portfolio.html"> Portfolio </a></li>
+      <li class = "nav"><a href = "resume.html"> Resume</a> </li>
+      <li class = "nav"><a href = "GWC.html"> Girls Who Code - SIP</a> </li>
+    </ul>
+    <div class = "portfolioTxt">
+      <h1> Lick Wilmerding High School - Technical Arts</h1>
+      <h2> Circuits and Electronics: Analog and Digital + Circuits and Electronics: Device Invention</h2>
+    </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/circuits.jpg" style="width:100%">
+          <div class="text">Circuits for bluetooth speaker</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/speaker.jpeg" style="width:100%">
+          <div class="text">Bluetooth MDF speaker</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/wireless.jpg" style="width:100%">
+          <div class="text">Wireless internet-connected display</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/solar.jpg" style="width:100%">
+          <div class="text">Solar powered charging box</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <div class = "portfolioTxt">
+      <p>  I took two semester long courses focused on Circuits and Electronics in my sophomore year at Lick-Wilmerding High School.
+        Circuits and Electronics: Analog and Digital is a semester-long Techincal Arts course offered at LWHS (Lick-Wilmerding). In the class, we
+        learned about the basic skills to design and build an analog and digital (programmable) circuit using Arduino. We created an amplifier/speaker and researched
+         how the shape of our speakers and the material we used affects the resonance and sound quality of our speakers. We were able to choose to add
+         certain features that would make the project more difficult- I chose to add a petrometer, two tweeters, and a bluetooth. We also programmed
+         an audio visualizer using a microcontroller that took in an audio input, analysed the audio, and outputed some code that controlled an LED
+          matrix grid panel.
+
+     <br> <br> Circuits and Electronics: Device Invention is another semester-long Technical Arts course offered at LWHS. In this class, we continued to
+      develop our skills with designing and building electronic devices and circuits. We learned about data visualization, API, and other topics. For
+      our data visualization project, our group chose to make a data visualization for a chemistry project we had. It was kinda like a science fair project
+      and we had to find a way to display our data. As a result, we ended up making an interactive chart that showed the ideal environment for yeast growht.
+      We were able to have a lot more freedom in this class; we were able to choose what our many of our projects would be. For our internet-connected project,
+      I chose to make a display (in a small acrylic box) with the Arduino screen that displayed the temperature, weather, and date of that day. In addition, there
+      was a button that would switch between screens so that you would also be able to see the MUNI (public transportation) times for my bus stop.
+       <br> <br>
+      In all our projects from these two classes, we learned the importance of time management, perserverance and prototyping. Through time management, we
+      were able to make sure that our projects would actually get done on time. Perserverance was super important, especially when we had to trouble-shoot
+      our code or look for small mistakes in our circuits.
+
+     <p>
+
+    </div>
+
+    <br> <br> <br> <br>
+
+    <footer>
+      <p id="copyright"> Designed and Coded by Patricia Tse </p>
+      <a class = "social" href = "https://www.instagram.com/"> <img src = "ig.png"> </a>
+      <a class = "social" href = "https://www.linkedin.com/"> <img src = "linkedin.png"> </a>
+      <a class = "social" href = "https://www.facebook.com/"> <img src = "fb.png"> </a>
+    </footer>
+  </body>
+
+</html>

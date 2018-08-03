@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kinetics Portfolio </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body onload = "currentSlide(1)">
+    <ul id = "nav">
+      <li class = "nav"><a href = "index.html"> Home </a> </li>
+      <li class = "nav"><a href = "AboutMe.html"> About Me </a></li>
+      <li class = "nav"><a href = "index.html#contact"> Contact</a> </li>
+      <li class = "nav"><a href="portfolio.html"> Portfolio </a></li>
+      <li class = "nav"><a href = "resume.html"> Resume</a> </li>
+      <li class = "nav"><a href = "GWC.html"> Girls Who Code - SIP</a> </li>
+    </ul>
+    <div class = "portfolioTxt">
+      <h1> Lick Wilmerding High School - Technical Arts</h1>
+      <h2> Metal Fabrications: Kinetics </h2>
+    </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/metal.png" style="width:100%">
+          <div class="text">Kinetic Sculpture</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/ramp.png" style="width:100%">
+          <div class="text">Pneumatic Machineram</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/car.png" style="width:100%">
+          <div class="text">Pine Wood Derby Car</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+<div class = "portfolioTxt">
+  <p>   Metal Fabrications: Kinetics is a semester-long Techincal Arts course offered at Lick-Wilmerding High School.
+    I took this class during the fall semester of my junior year at LWHS (Lick-Wilmerding). In the class, we learned about
+  pneumatics, hydraulics, and simple machines like levers and pulleys. This class mainly focused on the mechanics of motion,
+  looking at concepts like gears, cams, levers, and linkages, and taught me how I could use these to create mechanical advantage.
+Not only did I learn a lot, but I was also able to have a lot of freedom with many of the choices I made - I chose what materials to work with,
+what concepts I wish to use, and what final project I wanted to complete. For every project, I was required to design and create each assigment while following a schedule
+that I assigned myself. Because this course is so focused on kinetics and motion, I was able to apply what I learned in my physics course into the
+designing phase of my assignments.</p>
+
+
+  <ul class = "projects">
+  <button class="accordion"> Pinewood Derby Car</button>
+  <div class="panel">
+    <img class = "gameImg" src = "images/car.png">
+    <p> For our final projects, </p>
+  </div>
+
+  <button class="accordion"> Hydraulics, Pneumatics, and Linkages Project</button>
+  <div class="panel">
+    <img class = "gameImg" src = "images/ramp.png">
+    <p> For our final projects, </p>
+  </div>
+
+  <button class="accordion"> Final Project</button>
+  <div class="panel">
+    <img class = "gameImg" src = "images/metal.png">
+    <p> For our final projects, </p>
+  </div>
+
+  </ul>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<br> <br> <br> <br>
+    <footer>
+      <p id="copyright"> Designed and Coded by Patricia Tse </p>
+      <a class = "social" href = "https://www.instagram.com/"> <img src = "ig.png"> </a>
+      <a class = "social" href = "https://www.linkedin.com/"> <img src = "linkedin.png"> </a>
+      <a class = "social" href = "https://www.facebook.com/"> <img src = "fb.png"> </a>
+    </footer>
+  </body>
+
+</html>

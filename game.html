@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title> Home </title>
+  <link rel = "stylesheet" href = "style.css">
+  <script src = "script.js"> </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Verdana", Geneva, sans-serif;
+      text-align: center;
+    }
+
+    canvas{
+      border:1px solid #d3d3d3;
+      background-color: #f1f1f1;
+    }
+  </style>
+
+</head>
+
+<body onkeydown="keyCode(event)">
+  <ul id = "nav">
+    <li class = "nav"><a href = "index.html"> Home </a> </li>
+    <li class = "nav"><a href = "AboutMe.html"> About Me </a></li>
+    <li class = "nav"><a href = "index.html#contact"> Contact</a> </li>
+    <li class = "nav"><a href="portfolio.html"> Portfolio </a></li>
+    <li class = "nav"><a href = "resume.html"> Resume</a> </li>
+    <li class = "nav"><a href = "GWCportfolio.html"> Girls Who Code - SIP</a> </li>
+  </ul>
+
+  <h1> Home </h1>
+  <p>
+    Welcome to the game
+    <br>
+    Blah blah blah blah blah. Press Space to start
+  </p>
+
+  <script>
+    var myGamePiece;
+    var myBackground;
+    var myObstacle;
+    var score;
+    var total_score;
+    var high_score;
+    var count_score;
+    var gender;
+    var skin;
+    var hair;
+    var teenImg;
+    var babyImg;
+    var adultImg;
+    var obImg;
+    var obstacleNum;
+    var count = 0;
+    var generation;
+    var check = false;
+    var start = 0;
+    var lives;
+    var partLives;
+
+  function startGame() { // starts game
+    score = 0; // need 50 to reach next level, then resets once starts new level
+    lives = 3;
+    partLives = 3;
+    total_score = 0; // starts with 0 score
+    count_score = 0; // keeps track of level
+    generation = 0;
+    gender = Math.floor(Math.random() *2); //boy is 0, girl is 1
+    skin = Math.floor(Math.random() * 4); // 4 skin tones
+    hair = Math.floor(Math.random() * 4); // 4 hair colors
+    if (gender == 0){//boy
+      if (skin == 0){ // 0 to 1, lightest to darkest
+        babyImg = "babies/boy1.svg";
+      }
+      if (skin == 1){
+        babyImg = "babies/boy2.svg";
+      }
+      if (skin == 2){
+        babyImg = "babies/boy3.svg";
+      }
+      if (skin == 3){
+        babyImg = "babies/boy4.svg";
+      }
+    }
+    if (gender == 1){//girl
+      if (skin == 0){ // 0 to 1, lightest to darkest
+        babyImg = "babies/girl1.svg";
+      }
+      if (skin == 1){
+        babyImg = "babies/girl2.svg";
+      }
+      if (skin == 2){
+        babyImg = "babies/girl3.svg";
+      }
+      if (skin == 3){
+        babyImg = "babies/girl4.svg";
+      }
+    }
+
+    myScore = new component("15px", "Consolas", "black", 20, 20, "text");
+    myLives = new component("15px", "Consolas", "black", 20, 40, "text")
+    myGamePiece = new component(80, 100, babyImg, 10, 100, "image");
+    myBackground = new component(3700, 270, "background/kid.svg", -50, 0, "background");
+    myObstacle = new component(10, 10, "", 0, 0, "obstacle");
+
+    myGamePiece.gravity= 1.6;
+    myGameArea.start();
+
+  }
+
+  var myGameArea = { // runs everytime
+      canvas : document.createElement("canvas"),
+      start : function() {
+        myGamePiece.speedX= 0;
+        myGamePiece.speedY= 0;
+        myGamePiece.gravitySpeed = 5.6;
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 20);
+        window.addEventListener('keydown', function(e){
+          myGameArea.key= e.keyCode;
+        })
+        window.addEventListener('keyup', function(e){
+          myGameArea.key= false;
+        })
+        },
+      clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      },
+      stop : function() {
+        clearInterval(this.interval);
+      }
+  }
+
+  function component(width, height, color, x, y, type) {
+      this.type = type;
+      if (type == "image" || type == "background" || type == "obstacle") {
+        this.image = new Image();
+        this.image.src = color;
+        if (type == "image"){
+          this.gravitySpeed =  5.6; // image accelerates downward while rest of things aren't affected by gravity
+        }
+      }
+      this.width = width;
+      this.height = height;
+      this.speedX = 0;
+      this.speedY = 0;
+      if (  type == "obstacle" || type == "background"){
+        if (start == 0){
+          this.speedX = -7;
+        }
+        else{
+          this.speedX = -7 - (2*generation);
+        }
+      }
+      if( type == "image"){
+        this.speedX = 0;
+      }
+      this.x = x;
+      this.y = y;
+      this.gravity= 0.05;
+      this.gravitySpeed= 0.6;
+
+      this.update = function() { //"prints" everything
+        ctx = myGameArea.context;
+        if (type == "image" || type == "background" || type == "text" || type == "obstacle") { //draws each image
+          if (type == "image"){
+            ctx.drawImage(this.image,
+            this.x,
+            this.y,
+            this.width, this.height);
+          }
+          if (type == "obstacle"){
+            ctx.drawImage(this.image,
+            this.x,
+            this.y,
+            this.width, this.height);
+          }
+          if (type == "background") {
+            ctx.drawImage(this.image,
+            this.x,
+            this.y,
+            this.width, this.height);
+            ctx.drawImage(this.image,
+            this.x + this.width-60,
+            this.y,
+            this.width, this.height);
+          }
+          if (type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
+          }
+        }
+        else {
+          ctx.fillStyle = color;
+          ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+      }
+
+      this.newPos = function() { // new position based on type
+          if (this.type == "image"){ // for image, check if: hit any of the edges, and gravity accelerates downwards
+            this.gravitySpeed += this.gravity;
+            this.hitBottom();
+            this.hitTop();
+            this.hitRight();
+            this.hitLeft();
+            this.y += this.speedY + this.gravitySpeed; //  change y value by adding speed and gravity
+          }
+          if (this.type == "background") { // for background, moves back to beginning when pass through screen (to loop)
+            if (this.x <= -(this.width)) {
+                this.x = -50; // weird thing where background kinda cuts off, so make sure that it starts earlier
+            }
+          }
+          if (this.type == "obstacle"){
+              if (this.x <= -(this.width)) { // create new obstacle when pass screen
+                var x1;
+                var y1;
+                if (count_score == 0){ // four baby ones
+                  obstacleNum = Math.floor(Math.random() *4)
+                  if (obstacleNum == 0){
+                    obImg = "items/Boys/Train.svg";
+                    x1 = 50;
+                    y1 = 40;
+                  }
+                  if (obstacleNum == 1){
+                    obImg = "items/Girls/Doll.svg";
+                    x1 = 50;
+                    y1 = 50;
+                  }
+                  if (obstacleNum == 2){
+                    obImg = "items/Boys/legoes.svg";
+                    x1 = 50;
+                    y1 = 40;
+                  }
+                  if (obstacleNum == 3){
+                    obImg = "items/Girls/ragdoll.svg";
+                    x1 = 60;
+                    y1 = 40;
+                  }
+                }
+                if (count_score == 1){ // 4 teen ones
+                  obstacleNum = Math.floor(Math.random() *4)
+                  if (obstacleNum == 0){
+                    obImg = "items/Boys/Weights.svg";
+                    x1 = 50;
+                    y1 = 20;
+                  }
+                  if (obstacleNum == 1){
+                    obImg = "items/Boys/Videogame.svg";
+                    x1 = 70;
+                    y1 = 40;
+                  }
+                  if (obstacleNum == 2){
+                    obImg = "items/Girls/Fashion.svg";
+                    x1 = 50;
+                    y1 = 40;
+                  }
+                  if (obstacleNum == 3){
+                    obImg = "items/Girls/Makeup.svg";
+                    x1 = 20;
+                    y1 = 40;
+                  }
+                }
+                if (count_score == 2){ // 3 adult ones
+                  obstacleNum = Math.floor(Math.random() *3)
+                  if (obstacleNum == 0){
+                    obImg = "items/Neutral/Family.svg";
+                    x1 = 50;
+                    y1 = 50;
+                  }
+                  if (obstacleNum == 1){
+                    obImg = "items/Boys/Job.svg";
+                    x1 = 50;
+                    y1 = 40;
+                  }
+                  if (obstacleNum == 2){
+                    obImg = "items/Neutral/House.svg";
+                    x1 = 50;
+                    y1 = 50;
+                  }
+                }
+
+                //can be in 2 y values, by random
+                var rand = Math.floor(Math.random()*2)
+                if (rand == 0){
+                  var ObstacleY = 50;
+                }
+                if (rand == 1){
+                  var ObstacleY = 200;
+                }
+                myObstacle = new component(x1, y1, obImg, 450, ObstacleY, "obstacle"); // create obstacle
+              }
+            }// if obstacle, creates obstacle
+          this.x += this.speedX; //change x value by adding speed to
+      }
+
+      this.hitBottom = function() { //when hit bottom
+        var rockbottom = myGameArea.canvas.height - this.height- 20;
+        if (this.y > rockbottom){ //if below bottom
+          this.y = rockbottom; //set equal to bottom
+          this.gravitySpeed = 0; //make sure does not keep accelerating downwards
+        }
+      }
+
+      this.hitTop = function() { //when hit top of canvas
+        var top= 0;
+        if (this.y < top){ // if greater than top (above)
+          this.y= top; //sets = top
+          this.gravitySpeed= 0.6; // makes acceleration so go down
+        }
+      }
+
+      this.hitRight = function() { //when hit right
+        var rockbottom = myGameArea.canvas.width - this.width;
+        if(this.type == "image"){
+          if (this.x > rockbottom){ //if beyond right
+            this.x = rockbottom; //set equal to right
+            this.SpeedX = 0; //make sure does not go right
+          }
+        }
+      }
+
+      this.hitLeft = function() { //when hit left
+        var left = 0;
+        if (this.type == "image"){
+          if (this.x < left){ //if hit left
+            this.x = left; //set equal to left
+            this.SpeedX = 0; //make sure does not go left
+          }
+        }
+      }
+
+      if (type == "image"){ //check if crash with an obstacle (based if overlap width and height)
+        this.crashWith = function(ob) {
+          var myleft = this.x+ 10;
+          var myright = this.x + (this.width)- 10;
+          var mytop = this.y;
+          var mybottom = this.y + (this.height);
+          var otherleft = ob.x;
+          var otherright = ob.x + (ob.width);
+          var othertop = ob.y;
+          var otherbottom = ob.y + (ob.height);
+          var crash = true;
+          if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+              crash = false;
+          }
+          return crash;
+        }
+      }
+  }
+
+  function accelerate(n){
+    myGamePiece.gravity= n;
+  }
+
+  function updateGameArea() {
+    console.log(myObstacle.speedX);
+    console.log(myBackground.speedX);
+    if (gender == 0){ //boy
+      if (skin == 0){ // 0 to 1, lightest to darkest
+        adultImg = "adult/man/skin1.svg";
+        if (hair == 0){
+          teenImg = "teen/boy/skin1/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/boy/skin1/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/boy/skin1/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/boy/skin1/lightBrownHair.svg";
+        }
+      }
+      if (skin == 1){
+        adultImg = "adult/man/skin2.svg";
+        if (hair == 0){
+          teenImg = "teen/boy/skin2/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/boy/skin2/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/boy/skin2/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/boy/skin2/lightBrownHair.svg";
+        }
+      }
+      if (skin == 2){
+        adultImg = "adult/man/skin3.svg";
+        if (hair == 0){
+          teenImg = "teen/boy/skin3/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/boy/skin3/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/boy/skin3/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/boy/skin3/lightBrownHair.svg";
+        }
+      }
+      if (skin == 3){
+        adultImg = "adult/man/skin4.svg";
+        if (hair == 0){
+          teenImg = "teen/boy/skin4/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/boy/skin4/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/boy/skin4/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/boy/skin4/lightBrownHair.svg";
+        }
+      }
+    }
+    else if(gender == 1){ //girl
+      if (skin == 0){ // 0 to 1, lightest to darkest
+        if (hair == 0){
+          teenImg = "teen/girl/skin1/blackHair.svg";
+          adultImg = "adult/woman/skin1/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/girl/skin1/blondHair.svg";
+          adultImg = "adult/woman/skin1/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/girl/skin1/brownHair.svg";
+          adultImg = "adult/woman/skin1/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/girl/skin1/lightBrownHair.svg";
+          adultImg = "adult/woman/skin1/lightBrownHair.svg";
+        }
+      }
+      if (skin == 1){
+        if (hair == 0){
+          teenImg = "teen/girl/skin2/blackHair.svg";
+          adultImg = "adult/woman/skin2/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/girl/skin2/blondHair.svg";
+          adultImg = "adult/woman/skin2/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/girl/skin2/brownHair.svg";
+          adultImg = "adult/woman/skin2/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/girl/skin2/lightBrownHair.svg";
+          adultImg = "adult/woman/skin2/LightBrownHair.svg";
+        }
+      }
+      if (skin == 2){
+        if (hair == 0){
+          teenImg = "teen/girl/skin3/blackHair.svg";
+          adultImg = "adult/woman/skin3/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/girl/skin3/blondHair.svg";
+          adultImg ="adult/woman/skin3/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/girl/skin3/brownHair.svg";
+          adultImg ="adult/woman/skin3/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/girl/skin3/lightBrownHair.svg";
+          adultImg = "adult/woman/skin3/lightBrownHair.svg";
+        }
+      }
+      if (skin == 3){
+        if (hair == 0){
+          teenImg = "teen/girl/skin4/blackHair.svg";
+          adultImg = "adult/woman/skin4/blackHair.svg";
+        }
+        if (hair == 1){
+          teenImg = "teen/girl/skin4/blondHair.svg";
+          adultImg = "adult/woman/skin4/blondHair.svg";
+        }
+        if (hair == 2){
+          teenImg = "teen/girl/skin4/brownHair.svg";
+          adultImg = "adult/woman/skin4/brownHair.svg";
+        }
+        if (hair == 3){
+          teenImg = "teen/girl/skin4/lightBrownHair.svg";
+          adultImg = "adult/woman/skin4/lightBrownHair.svg";
+        }
+      }
+    }
+
+    if (score == 50 && count_score == 0){ // once reaches score of 50 (first time), changes to next state(to teen)
+      myGameArea.clear();
+      myBackground = new component(3700, 270, "background/teen.svg", -50, 0, "background"); // change to teen background
+      myObstacle = new component(100,100, "", 0, 0, "obstacle");
+      if (gender == 0){
+        myGamePiece = new component(50, 100, teenImg, 10, 100, "image"); //change to boy sprite (different dimensions)
+      }
+      else if (gender == 1){
+        myGamePiece = new component(30, 100, teenImg, 10, 100, "image"); //change to girl sprite
+      }
+      score = 0; // resets to 0, (reach 50 to go to next level)
+      count_score += 1; // count_score shows which level
+    }
+
+    if (score == 50 && count_score == 1){ // second time reaching 50, changes to adult
+      myGameArea.clear();
+      myBackground = new component(3700, 270, "background/adult.svg", -50, 0, "background"); //change to adult background
+      myGamePiece = new component(30, 100, adultImg, 10, 100, "image");
+      myObstacle = new component(100,100, "", 0, 0, "obstacle");
+      score = 0; // reset level score
+      count_score += 1; // go up one level
+    }
+
+    if (score == 50 && count_score == 2){ // resets back to baby stage
+      myGameArea.clear();
+      generation += 1; // completed one full round
+      start += 1;
+      myObstacle.speedX = -7 - (2*generation);
+      myBackground.speedX = -7 - (2* generation);
+      myBackground = new component(3700, 270, "background/Kid.svg", -50, 0, "background"); //change to adult background
+      myGamePiece = new component(80, 100, babyImg, 10, 100, "image");
+      myObstacle = new component(100,100, "", 0, 0, "obstacle");
+
+      score = 0; //reset level score
+      count_score = 0; //reset to level 0
+    }
+
+      myGameArea.clear();
+      myObstacle.update();
+      myBackground.newPos();
+      myBackground.update();
+      myGamePiece.speedX= 0;
+      myGamePiece.speedY= 0;
+
+
+      if (myGameArea.key && myGameArea.key == 37){ //left
+        myGamePiece.speedX= -4;
+      }
+
+      if (myGameArea.key && myGameArea.key== 39){ //right
+        myGamePiece.speedX= 6
+      }
+
+      if (myGameArea.key && myGameArea.key == 40){ //down
+        myGamePiece.speedY =4;
+      }
+
+      if( myGamePiece.y >= 130){ //up
+        if (myGameArea.key && myGameArea.key == 38){
+          accelerate(-0.6);
+        }
+      }
+
+      if(myGamePiece.y <= 80){ //make sure it will not hover at top
+        if(myGamePiece.y <= 0){
+          accelerate(0.6);
+        }
+      }
+
+      if (!myGameArea.key) { //doesn't accelerate if "on the floor"
+        if (myGamePiece.y < myGameArea.canvas.height - myGamePiece.height- 18 && myGamePiece.y > myGameArea.canvas.height - myGamePiece.height- 22){
+          accelerate(0);
+        }
+        else{
+          accelerate(1);
+        }
+      }//default gravity
+
+      var crash = myGamePiece.crashWith(myObstacle);
+      if (crash == true){
+        if (check == false){ //check if crashed with obstacle
+          if (gender == 0){ //boy
+            if (count_score == 0){
+              if (obstacleNum == 0){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 1){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 2){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 3){
+                score -= 10;
+                total_score -=10;
+                partLives -= 1;
+              }
+            }
+            if (count_score == 1){
+              if (obstacleNum == 0){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 1){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 2){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 3){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+            }
+            if (count_score == 2){
+              if (obstacleNum == 0){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 1){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 2){
+                score += 10;
+                total_score += 10;
+              }
+            }
+          }
+          if (gender == 1){
+            if (count_score == 0){
+              if (obstacleNum == 0){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 1){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 2){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 3){
+                score += 10;
+                total_score +=10;
+              }
+            }
+            if (count_score == 1){
+              if (obstacleNum == 0){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 1){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 2){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 3){
+                score += 10;
+                total_score += 10;
+              }
+            }
+            if (count_score == 2){
+              if (obstacleNum == 0){
+                score += 10;
+                total_score += 10;
+              }
+              if (obstacleNum == 1){
+                score -= 10;
+                total_score -= 10;
+                partLives -= 1;
+              }
+              if (obstacleNum == 2){
+                score += 10;
+                total_score += 10;
+              }
+            }
+          }
+          check = true;
+        }
+      }
+      if (crash == false){
+        check = false;
+      }
+      if (partLives == 0){
+        if (count_score == 0){ // once reaches score of 50 (first time), changes to next state(to teen)
+          myGameArea.clear();
+          myBackground = new component(3700, 270, "background/Kid.svg", -50, 0, "background"); // change to teen background
+          myObstacle = new component(100,100, "", 0, 0, "obstacle");
+        }
+
+        if (count_score == 1){ // second time reaching 50, changes to adult
+          myGameArea.clear();
+          myBackground = new component(3700, 270, "background/teen.svg", -50, 0, "background"); //change to adult background
+          myObstacle = new component(100,100, "", 0, 0, "obstacle");
+        }
+
+        if (count_score == 2){ // resets back to baby stage
+          myGameArea.clear();
+          myBackground = new component(3700, 270, "background/adult.svg", -50, 0, "background"); //change to adult background
+          myObstacle = new component(100,100, "", 0, 0, "obstacle");
+        }
+        lives -= 1;
+        partLives = 3;
+      }
+      if (lives <= 0){
+        console.log("GAMEOVER");
+      }
+
+      myScore.text = "Score: " + total_score;
+      myScore.update(); //display score
+      myLives.text = "Lives: " + lives;
+      myLives.update();
+      myObstacle.newPos();
+      myObstacle.update();
+      myGamePiece.newPos();
+      myGamePiece.update();
+  }
+
+  function keyCode(event) { // check if press shift key to start/restart game
+    var x = event.keyCode;
+    if ( x == 32 && count == 0){//check first space (start game)
+        count += 1;
+        start = 0;
+        startGame();
+     }
+    else if (x == 32 && count != 0){   //if press space again (second time pressing space), will restart
+       console.log("test");
+       myGameArea.stop();
+       start = 0;
+       startGame();
+     }
+  }
+
+  </script>
+</body>
+</html>

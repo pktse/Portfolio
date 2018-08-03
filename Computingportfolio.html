@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Computing Portfolio </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body onload = "currentSlide(1)">
+    <ul id = "nav">
+      <li class = "nav"><a href = "index.html"> Home </a> </li>
+      <li class = "nav"><a href = "AboutMe.html"> About Me </a></li>
+      <li class = "nav"><a href = "index.html#contact"> Contact</a> </li>
+      <li class = "nav"><a href="portfolio.html"> Portfolio </a></li>
+      <li class = "nav"><a href = "resume.html"> Resume</a> </li>
+      <li class = "nav"><a href = "GWC.html"> Girls Who Code - SIP</a> </li>
+    </ul>
+    <div class = "portfolioTxt">
+      <h1> Lick Wilmerding High School - Technical Arts</h1>
+      <h2> Computing 1 + Computing 2 PPP </h2>
+    </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/computing.jpg" style="width:100%">
+          <div class="text"> Apron made from programmed design</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/textile.png" style="width:100%">
+          <div class="text"> Javascript generated design</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/parametric.png" style="width:100%">
+        <div class="text"> Customizable bracelet using OpenJscad</div>
+      </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class = "portfolioTxt">
+      <p>  I took two semester long courses focused on Computer Science in my sophomore year at Lick-Wilmerding High School.
+        Computing 1 is a semester-long Techincal Arts course offered at LWHS (Lick-Wilmerding). In the class, we learned about
+      the basics of computer science through Scratch and p5 (javascript). In many of our projects, we interwove art with computer programming,
+      demonstrating how coding is filled with creativity and self-expression. We generated visual art, designed textiles, created animations,
+      made custon software, and physically fabricated our designs on machines like the laser cutter, 3d printer, and CNC mill. Through all our projects,
+      we developed a strong foundation in computer science concepts.
+
+     <br> <br> Computing 2 PPP (Public Purpose Program) is another semester-long Technical Arts course offered at LWHS that has a
+     community focused aspect. In this class, we continued to deepen our understanding of computer science. We also focused more on what computers are,
+   learning about binary, the history of the computer, digital logic, memory, and more. We were able to have a lot more freedom with this course- we
+ were able to choose a programming language research and use to make a project of our choice.
+
+   <br> <br> In both classes, we  practiced collaboration; many of our large projects required that we work in group or pairs, preparing us for the culture
+    at jobs where people work in teams to create awesome products. In our final project,to fulfill the PPP aspect, we were tasked to make a website
+    or app that would benefit the community. We had to learn a lot about UI/UX, communication with clients and overall planning.</p>
+
+    </div>
+
+    <br> <br> <br> <br>
+
+    <footer>
+      <p id="copyright"> Designed and Coded by Patricia Tse </p>
+      <a class = "social" href = "https://www.instagram.com/"> <img src = "ig.png"> </a>
+      <a class = "social" href = "https://www.linkedin.com/"> <img src = "linkedin.png"> </a>
+      <a class = "social" href = "https://www.facebook.com/"> <img src = "fb.png"> </a>
+    </footer>
+  </body>
+
+</html>
