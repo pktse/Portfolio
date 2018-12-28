@@ -11,13 +11,12 @@
   </head>
 
   <body onload = "currentSlide(1)">
-    <ul id = "nav"> <!-- Navigation -->
-      <li class = "nav"><a href = "index.html"> Home </a> </li>
-      <li class = "nav"><a href = "AboutMe.html"> About Me </a></li>
-      <li class = "nav"><a href = "index.html#contact"> Contact</a> </li>
-      <li class = "nav"><a href="portfolio.html"> Portfolio </a></li>
+    <ul id = "nav">
+      <li class = "nav" style = "float: left; "><a style = "font-size: 30px; color: black " href = "index.html"> Patricia Tse </a> </li>
+      <li class = "nav"><a href = "index.html"> About Me</a> </li>
+      <li class = "nav"><a href = "contact.html"> Contact</a> </li>
+      <li class = "nav"><a href = "portfolio.html" onclick="popup()"> Projects </a></li>
       <li class = "nav"><a href = "resume.html"> Resume</a> </li>
-      <li class = "nav"><a href = "GWCportfolio.html"> Girls Who Code - SIP</a> </li>
     </ul>
 
     <div class = "portfolioTxt">
@@ -81,7 +80,7 @@
           <div class="row2"> <!-- About Me -->
             <div class="column2">
                 <div class = "container2">
-                    <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;"><a href="https://scratch.mit.edu/projects/228641866/"target="_blank">About Me Project</a></li>
+                    <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;"><a class = "GWClink" href="https://scratch.mit.edu/projects/228641866/"target="_blank">About Me Project</a></li>
                     <p > (press the green flag in the top right handcorner to start)<br>
                       In this project, we experimented with the basics of Scratch so that we could familiarize ourselves with the basic blocks. We learned how to change sprites,
                       move to different coordinates, spin, have dialogue, and have conditionals. In my project, I had a conditonal that made the sprite keep moving forward until
@@ -104,7 +103,7 @@
               </div>
               <div class="column2">
                   <div class = "container2">
-                      <li style = "font-size: 30px; margin-top: 30px;"><a href="https://scratch.mit.edu/projects/228809322/"target="_blank">So You Think You Got The Moves</a></li>
+                      <li style = "font-size: 30px; margin-top: 30px;"><a class = "GWClink" href="https://scratch.mit.edu/projects/228809322/"target="_blank">So You Think You Got The Moves</a></li>
                       <p > (press the green flag in the top right handcorner to start)<br>
                         In this project, we continued to look at different fundamental building blocks of coding: loops, conditionals, variables, and functions.
                       I created many variables that were booleans so that I could check that a certain action had taken place. Once that action took place, the boolean would
@@ -118,7 +117,7 @@
           <div class="row2"> <!-- Choose Your Own Adventure -->
               <div class="column2">
                   <div class = "container2">
-                      <li style = "font-size: 30px; margin-top: 30px;"><a href="https://scratch.mit.edu/projects/228988609/"target="_blank">Choose Your Own Adventure Game</a></li>
+                      <li style = "font-size: 30px; margin-top: 30px;"><a class = "GWClink" href="https://scratch.mit.edu/projects/228988609/"target="_blank">Choose Your Own Adventure Game</a></li>
                       <p > (press the green flag in the top right handcorner to start)<br>
                         This game applied what we had learned throughout the week into one project. We learned about designing a game, prototyping, wireframing and developing. We also learned
                       about the basics of games such as the win-condition, collision detection, movement controls, levels, game flow, and lose conditions. I was really proud of this game because not
@@ -142,7 +141,7 @@
               </div>
               <div class="column2">
                   <div class = "container2">
-                      <li style = "font-size: 30px; margin-top: 30px;"><a href="https://scratch.mit.edu/projects/229198512/"target="_blank">Maze Game</a></li>
+                      <li style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"><a class = "GWClink" href="https://scratch.mit.edu/projects/229198512/"target="_blank">Maze Game</a></li>
                       <p > (press the green flag in the top right handcorner to start) <br>
                         This project was a group project and I learned so much about group programming. We had to find a way to efficiently break down all the tasks in a fair way. In addition, we had to
                       learn how to let others speak up while also knowing when to step up ourselves. In the game itself, we used a lot of conditional statements so that the program would know when the player
@@ -158,7 +157,7 @@
           <div class="row2"> <!-- python text adventure -->
             <div class="column2">
                 <div class = "container2">
-                    <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;"> Text Adventure Python Project</li>
+                    <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;  color: rgb(19,124,165)"> Text Adventure Python Project</li>
                     <p > To get comfortable with python, we transformed our Scratch choose your adventure game to a python text-based version. We used atom to create our
                      python files and used the command line to execute them. We used a lot of conditionals to naviage the game. In addition, I decided to challenge myself,
                     so I decided to try to make an option to keep playing the game until the user wanted to stop. This required using a "while statement". We also learned about
@@ -180,7 +179,7 @@
               </div>
               <div class="column2">
                   <div class = "container2">
-                      <li style = "font-size: 30px; margin-top: 30px;"> Hangman Project</li>
+                      <li style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> Hangman Project</li>
                       <p > In this project, we learned about lists and how data and numbers are stored in arrays. Specifically, we looked at how to find certain indexes in an list, lengths of lists,
                       or finding certain values in a list. We used all these skills to make a hangman game. This was extremely difficult for me because I originally used an array of words instead of a
                     list. As a result, there were some functions that I couldn't use. For example, I was not allowed to change one single letter in an array, but I could do that in a list. As a result,
@@ -194,7 +193,7 @@
             <div class="row2">
               <div class="column2">
                 <div class = "container2">
-                  <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;"> ChatBot </li>
+                  <li style = "font-size: 30px; margin-top: auto; margin-top: 30px; color: rgb(19,124,165)"> ChatBot </li>
                   <p > We began to learn more about functions in Python by making a Chatbot. We mainly just practiced making functions, but I wanted to challenge myself so I tried to add as many
                         features to the chatbox as I could. It wasn't too challenging because I used a lot of the code from previous projects we've done (like the hangman project, choose your own adventure game, and random number guesser game),
                         but I also added new games like a rock-paper-scizzors (where the computer randomly generates a number from 0 to 2 that corresponds with rock, paper, or scizzor), a random poem generator,
@@ -222,7 +221,7 @@
             </div>
             <div class="column2">
               <div class = "container2">
-                <li style = "font-size: 30px; margin-top: 30px;"> #AllTheFilters</li>
+                <li style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> #AllTheFilters</li>
                 <p > To practice using libraries, we made a program that would take an image, apply a filter to it, return the image, and save it. We had to use the Pillow library to open and save files.
                         We also had to use the math library to do computations. The way the Obamicon filter worked was that it would check how similar colors would be and if they were within a certain range of brightness,
                         it would assign it one color (change the RGB value). I also decided to challenge myself by making more filters. These included a greyscale filter that changed the RGB values so it would be grey rather than have
@@ -239,7 +238,7 @@
           <div class="row2"> <!-- Morse Code -->
             <div class="column2">
               <div class = "container2">
-                <p style = "font-size: 30px; margin-top: 30px;"> Morse Code Project </p>
+                <p style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> Morse Code Project </p>
                 <p> On the first day of the Robotics Week, we learned about the basics of Arduino and circuits. For the hardware, we learned about the difference between digital and analog, how circuit boards work, short circuits,
                      open circuits, resistors, and LEDS. For the programming language, we learned about how Arduino differed from Python, how to define variables and create functions. Using what we learned, we created a circuit
                      board that would turn on and flash a LED based on the program we ran. We used the build-in function, delay, to create the dashes and the dots. From there, we created the different letters based on the
@@ -337,7 +336,7 @@
             </div>
             <div class="column2">
               <div class = "container2">
-                <p style = "font-size: 30px; margin-top: 30px;"> Here Kitty Kitty Project </p>
+                <p style = "font-size: 30px; margin-top: 30px;  color: rgb(19,124,165)"> Here Kitty Kitty Project </p>
                 <p> Our site didn't follow the curriculum for Week 3: Robotics. In the planned our curriculum, we were expected to make a program everyday from Tuesday to Friday. Instead, our
                     site split us into groups and each group did the project of one day. The reason for this change was because we had to present our projects to the board of Girls Who Code.
                     Our site was chosen out of all the other classes. To make sure that we finished each project, each group was only allowed to do one project. Our group did the Here Kitty Kitty project.
@@ -401,7 +400,7 @@
         <div class="row2"> <!-- Portfolio -->
           <div class="column2">
               <div class = "container2">
-                <a href = "https://pktse.github.io/OG_portfolio/" target="_blank" ><p style = "font-size: 30px; margin-top: 30px;"> The Portfolio Website </p></a>
+                <p style = "font-size: 30px; margin-top: 30px;"><a class = "GWClink" href = "https://pktse.github.io/OG_portfolio/" target="_blank" > The Portfolio Website </a></p>
                 <p> This website itself is just a continuation of a website I started during this week. For our introduction to html and css, we were prompted to make a portfolio or a website about something we
                   were passionate about. The original website looked nothing like this one, but it had similar naviagtions and pages. We learned about tags, attributes, headers, paragraphs, embedding and importing images
                  and links. For the css, we learned about changing the background color, text color, text size, margins, paddings, and floating. We also did a little bit of Javascript. I decided to have a button that would
@@ -423,7 +422,7 @@
             </div>
             <div class="column2">
                 <div class = "container2">
-                  <a href = "https://pktse.github.io/GWC_Client_Website/" target="_blank"><p style = "font-size: 30px; margin-top: 30px;"> The Client Website </p></a>
+                  <p style = "font-size: 30px; margin-top: 30px;"> <a class = "GWClink" href = "https://pktse.github.io/GWC_Client_Website/" target="_blank">The Client Website</a> </p>
                    <p> We also had to practice making websites for a client. My client wanted me to make a website about kpop because she really enoys listening to it. We used all the tools and knowlege of html, css,
                    and javascript to create this website. Not only were we able to practice our web design and programming skills, we were also able to experience what it is like to have a client. We learned how important
                   it is to remember that what we are making is not for ourselves, but for someone else. As a result, it was super important to have good communication with our clients so that they would be satisfied with our finished
@@ -438,7 +437,7 @@
         <div class="row2"> <!-- Twitter Data -->
           <div class="column2">
               <div class = "container2">
-                <p style = "font-size: 30px; margin-top: 30px;"> Twitter Data</p>
+                <p style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> Twitter Data</p>
                 <p> We analyzed a dataset of Tweets (not-real) from Twitter using Python. The data was in the form of a json and we used our knowledge of Python, loops, and lists to print out certain data based on what we wanted.
                 We also created a text-blob using Python and the Textblob library. A textblob is basically a computer generated image of arranged words that are sized differently based on how many times it shows up. </p>
               </div>
@@ -563,7 +562,7 @@
             </div>
             <div class="column2">
                 <div class = "container2">
-                  <p style = "font-size: 30px; margin-top: 30px;"> Dictionary Attack </p>
+                  <p style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> Dictionary Attack </p>
                    <p> To practice finding or filtering data, we created a Python program that would run through the whole dataset and check if a word existed in the data or not. In this case, we had the user input a password
                      and we checked if the password was a word in the dictionary. We had to check that it had enough letters and if it had the current year in it. I tried to push myself by changing the program so that it could check if a word was similar.
                     For example, "He110" is similar to "Hello." Unfortunately, I couldn't make it work. Nonethless, I was quite proud of this project because I was one of the first students to finish the basic code (to check if it existed in the dataset)
@@ -575,7 +574,7 @@
         <div class="row2"> <!-- Weather Data -->
           <div class="column2">
               <div class = "container2">
-                <p style = "font-size: 30px; margin-top: 30px;"> Data Scientist For A Day</p>
+                <p style = "font-size: 30px; margin-top: 30px; color: rgb(19,124,165)"> Data Scientist For A Day</p>
                 <p> To practice everything we had learned from the previous projects, we were put into pairs and allowed to analyze any of the given datasets. My partner and I decided to analyze the weather dataset. We also decided to make a text blob based on
                 which city had the most storms. We calculated the average temperature of the dataset, the highest temperature, and the location of the hottest temperature. Those were quite easy to do because it was similar to what we had done before. For the text
                 blob, we had a lot of issues because everytime it made the textblob, it would print the certain words backwards because. For example, instead of printing "New York", it would print "York New". We later found out that it was because the space in between
@@ -649,7 +648,7 @@
 
       <button class="accordion" id = "week6"> Week 6+7: Final Project</button>
       <div class="panel">
-        <a href = "https://pktse.github.io/GWCSIPGame1/" target="_blank"><p style = "font-size: 30px; margin-top: 30px;"> The Final Project: LIvES </p></a>
+        <p style = "font-size: 30px; margin-top: 30px;"><a class = "GWClink" href = "https://pktse.github.io/GWCSIPGame1/" target="_blank"> The Final Project: LIvES </a></p>
         <img id = "gameImg" src = "images/game.png">
         <p> For our final projects, we were required to work in groups of 3-4 to create a website, app or game that would benefit the community. We decided to make a game using HTML, CSS, and Javascript. In our group, we had a
         main designer, main Javascript programmer, and 2 main HTML programmers. I was in charge of making the Javascript. For our game, we wanted to tackle the issue about how society places stereotypes on people based on their biological

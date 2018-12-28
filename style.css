@@ -71,7 +71,7 @@ footer{
   position: fixed;
   width: 100%;
   bottom:0px;
-  background-color: lightgreen;
+  background-color: black;
   margin:0px;
   padding:0px;
 }
@@ -84,6 +84,7 @@ footer{
   padding-bottom: 0px;
 }
 
+
 .social{
   width: 30px;
   height: 30px;
@@ -95,11 +96,13 @@ footer{
 #copyright{
   padding: 5px;
   margin: 0px;
+  color: white;
 }
 
 .social img{
   width: 30px;
   height: 30px;
+  padding-bottom: 1px;
 }
 
 #intro{
@@ -152,7 +155,7 @@ footer{
   height: 400px;
   padding: 5px;
   margin: 10px;
-  background-color: lightgreen;
+  background-color: black;
 }
 
 #nav{
@@ -160,6 +163,7 @@ footer{
   margin-left: auto%;
   overflow: hidden;
   text-align: center;
+  color: gainsboro;
 }
 
 .end{
@@ -170,8 +174,10 @@ footer{
 }
 
 .nav{
+  margin: 5px;
   text-align: center;
-  float: left;
+  color: gainsboro;
+  float: right;
   padding: 10px;
 }
 
@@ -188,20 +194,22 @@ footer{
 
 .nav a {
     display: block;
-    color: rgb(96, 44, 14);
+    color: darkgrey;
     text-align: center;
     text-decoration: none;
 }
 
 .nav a:hover{
-  color: lightgreen;
+  color: black;
 }
+
+
 
 .llama{
   padding: 5px;
   margin: 10px;
   border-radius: 10%;
-  background-color: lightgreen;
+  background-color: black;
   width: 150px;
   height: 100px;
   float:none;
@@ -209,14 +217,15 @@ footer{
 
 .website{
   width: 100%;
-  padding: 1px;
+  padding: 2px;
+  margin-top: 20%;
   border-radius: 0%;
-  background-color: grey;
+  background-color: black;
 }
 
 .code{
   text-align: left;
-  background-color: rgba(144, 238, 144, .5);
+  background-color: rgba(19,124,165,0.5);
   height: 300px;
   text-height: 20px;
   overflow: scroll;
@@ -226,7 +235,7 @@ footer{
 
 .video{
   padding:1px;
-  background-color: grey;
+  background-color: black;
 }
 
 .code2{
@@ -359,8 +368,8 @@ img {
 
 .column {
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    width: 50%;
+    padding: ;
 }
 
 /* Clearfix (clear floats) */
@@ -376,7 +385,7 @@ img {
 
 .container {
     position: relative;
-    background-color: lightgreen;
+    background-color: black;
 }
 
 .navImg {
@@ -429,11 +438,6 @@ img {
 .container .img{
   border-radius: 0%;
 }
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
 
 /* Clearfix (clear floats) */
 .row2::after {
@@ -453,7 +457,7 @@ img {
 .column2 {
     float: left;
     width: 50%;
-    padding: 5px;
+    padding: 5px ;
 }
 
 #gameImg{
@@ -469,4 +473,66 @@ img {
   margin: auto;
   border-radius: 0%;
 
+}
+
+.btn {
+  font-family: 'Roboto Mono', monospace;
+  font: inherit;
+  margin-left:10%;
+  background-color: rgb(19,124,165);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(12,57,76);
+}
+
+#email {
+  opacity: 0.5;
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 24%;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(19,124,165);
+}
+
+/* Darker background on mouse-over */
+#email:hover {
+  opacity: 1.0;
+  color: rgb(12,57,76);
+}
+
+.social2{
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  padding: 10px;
+
+}
+.social2 img{
+  opacity: 0.5;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 1px;
+}
+
+.social2 img:hover{
+  opacity: 1.0;
+}
+
+.GWClink {
+  text-decoration: underline;
+  opacity: 0.5;
+  color: rgb(19,124,165);
+}
+
+.GWClink:hover{
+  opacity: 1.0;
 }
