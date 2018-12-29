@@ -166,7 +166,70 @@
             </div>
             <div class="column2">
                 <div class = "container2">
-                  <iframe allowtransparency="true" width="450" height="373" src="https://scratch.mit.edu/projects/embed/228641866/?autostart=false" frameborder="0" allowfullscreen></iframe>
+                  <p> Code for Text Adventure Project: </p>
+                  <div class = "code2">
+                    <p class = "code">
+                      name = input("what is your name? ")<br>
+                      print("Hello " + name + "!")<br>
+                      print("Can you help me find my dog?")<br>
+                      YesOrNo = int(input("type 1 for yes, type 2 for no "))<br>
+                      <br>
+                      <br>
+                      while(YesOrNo != 1 and YesOrNo != 2):<br>
+                          &nbsp &nbsp &nbsp &nbsp print("Please choose 1 or 2")<br>
+                          &nbsp &nbsp &nbsp &nbsp YesOrNo = int(input("type 1 for yes, type 2 for no "))<br>
+                      <br>
+                      if(YesOrNo == 1):<br>
+                          &nbsp &nbsp &nbsp &nbsp print("Ok! Let's Go. Right now, we're in the city. Should we continue walking through the city or should we go to the forest?")<br>
+                          &nbsp &nbsp &nbsp &nbsp a1 = int(input("type 1 for city, type 2 for forest "))<br>
+                      <br>
+                          &nbsp &nbsp &nbsp &nbsp while (a1 != 1 and a1 != 2):<br>
+                              &nbsp &nbsp &nbsp &nbsp print &nbsp &nbsp &nbsp &nbsp ("Please choose 1 or 2")<br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp a1 = int(input("type 1 for city, type 2 for forest "))<br>
+                      <br>
+                          &nbsp &nbsp &nbsp &nbsp if(a1 == 1):<br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("Let's continue to the city. Should we go to the house or alleyway")<br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp a2 = int(input("type 1 for house, type 2 for alleyway "))<br>
+                      <br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp while (a2 != 1 and a2 != 2):<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print ("Please choose 1 or 2")<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp a2 = int(input("type 1 for house, type 2 for alleyway "))<br>
+                      <br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if(a2 == 1):<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("Let's go to the house. Should we go to the garage or the bedroom? ")<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp a3 = int(input("type 1 for garage, type 2 for bedroom "))<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp while (a3 != 1 and a3 != 2):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print ("Please choose 1 or 2")<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp a3 = int(input("type 1 for garage, type 2 for bedroom "))<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if (a3 == 1):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("Oh, :( looks like my dog isn't in the garage")<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp elif (a3 == 2):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("WOW! Look's like he was in my room the whole time!!! (april fools, i just wanted to spend time with you T-T )")<br>
+                      <br>
+                              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp elif(a2 == 2):<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("Looks like he's not in the alleyway ;-; ")<br>
+                      <br>
+                          &nbsp &nbsp &nbsp &nbsp elif(a1 == 2):<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("Ok, Let's go to the forest! Should we look behind the river or by this bush?")<br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp b2 = int(input("type 1 for the river, type 2 for the bush "))<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp while (b2 != 1 and b2 != 2):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print ("Please choose 1 or 2")<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp b2 = int(input("type 1 for river, type 2 for bush "))<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if (b2 == 1):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("He's not by the river, he\'s scared of water anyways. -_- ")<br>
+                      <br>
+                                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp elif(b2 == 2):<br>
+                                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("He's not behind the bush .... D\': ")<br>
+                      <br>
+                      elif(YesOrNo == 2):<br>
+                          &nbsp &nbsp &nbsp &nbsp print("Ok, Thanks! I\'ll find my dog by myself (cries...)")<br>
+                    </p>
+                   </div>
                 </div>
             </div>
           </div>
@@ -174,8 +237,127 @@
           <div class = "row2"> <!-- Hangman -->
               <div class="column2">
                   <div class = "container2">
-                    <iframe allowtransparency="true" width="450" height="373" src="https://scratch.mit.edu/projects/embed/228809322/?autostart=false" frameborder="0" allowfullscreen></iframe>
-                  </div>
+                    <p style = "margin-top: 100px;"> Code for Hangman Project: </p>
+                    <div class = "code2">
+                      <p class = "code">
+                        word2 = []<br>
+                        guesses = []<br>
+                        RightGuesses = []<br>
+                        win = 0<br>
+                        lives = 6<br>
+                        <br>
+                        word = input("Give me a word for someone else to guess: ").lower()<br>
+                        while(word.isalpha() == False):<br>
+                            &nbsp &nbsp &nbsp &nbsp word = input("That's not a word, input another word: ")<br>
+                        <br>
+                        for index in range(0,25):<br>
+                            &nbsp &nbsp &nbsp &nbsp print(" ")<br>
+                        <br>
+                        for i in word:<br>
+                            &nbsp &nbsp &nbsp &nbsp word2.append("_")<br>
+                        <br>
+                        while lives > 0:<br>
+                            &nbsp &nbsp &nbsp &nbsp print("__________________________________________")<br>
+                            &nbsp &nbsp &nbsp &nbsp print(word2)<br>
+                            &nbsp &nbsp &nbsp &nbsp print("Wrong guesses: ", guesses)<br>
+                            &nbsp &nbsp &nbsp &nbsp print("Lives: " + str(lives))<br>
+                        <br>
+                            &nbsp &nbsp &nbsp &nbsp if lives == 6:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 5:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 4:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 3:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     /|")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 2:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     /|\\")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 1:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     /|\\")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     / ")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp elif lives == 0:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     /|\\")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|     / \\")<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                        <br>
+                            &nbsp &nbsp &nbsp &nbsp guess = input("guess a random letter: ").lower()<br>
+                            &nbsp &nbsp &nbsp &nbsp while(guess.isalpha() == False):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp guess = input("That's not a letter, input another letter: ")<br>
+                            &nbsp &nbsp &nbsp &nbsp while(len(guess) > 1):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp guess = input("That's too long, enter only one letter: ")<br>
+                            &nbsp &nbsp &nbsp &nbsp while((guess in guesses) or (guess in RightGuesses)):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp guess = input("guess a random letter that you have not chosen before: ").lower()<br>
+                            &nbsp &nbsp &nbsp &nbsp if(guess in word):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp RightGuesses.append(guess)<br>
+                            &nbsp &nbsp &nbsp &nbsp else:<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp lives -= 1<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp guesses.append(guess)<br>
+                        <br>
+                            &nbsp &nbsp &nbsp &nbsp i=0<br>
+                            &nbsp &nbsp &nbsp &nbsp while i < len(word):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if(str(guess) == str(word[i])):<br>
+                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp x = 0<br>
+                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp while x <= len(word):<br>
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if x == i:<br>
+                                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp word2[i] = guess<br>
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp x +=1<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp i += 1<br>
+                            &nbsp &nbsp &nbsp &nbsp if("_" not in word2):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp win = 1<br>
+                            &nbsp &nbsp &nbsp &nbsp for i in range(0,len(word2)):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if word2[i] == "_":<br>
+                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp win = 0<br>
+                            &nbsp &nbsp &nbsp &nbsp if(win == 1):<br>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp break<br>
+                        <br>
+                        print("__________________________________________")<br>
+                        print(word2)<br>
+                        if (win == 1):<br>
+                            &nbsp &nbsp &nbsp &nbsp print("Congrats! You WON!!! :D The word was: " + word)<br>
+                        elif (lives == 0):<br>
+                            &nbsp &nbsp &nbsp &nbsp print("--------")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("|      |")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("|      o")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("|     /|\\")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("|     / \\")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("|       ")<br>
+                            &nbsp &nbsp &nbsp &nbsp print("You are out of lives and the word was: " + word)<br>
+
+                      </p>
+                     </div>
+                   </div>
               </div>
               <div class="column2">
                   <div class = "container2">
@@ -194,7 +376,7 @@
               <div class="column2">
                 <div class = "container2">
                   <li style = "font-size: 30px; margin-top: auto; margin-top: 30px; color: rgb(19,124,165)"> ChatBot </li>
-                  <p > We began to learn more about functions in Python by making a Chatbot. We mainly just practiced making functions, but I wanted to challenge myself so I tried to add as many
+                  <p> We began to learn more about functions in Python by making a Chatbot. We mainly just practiced making functions, but I wanted to challenge myself so I tried to add as many
                         features to the chatbox as I could. It wasn't too challenging because I used a lot of the code from previous projects we've done (like the hangman project, choose your own adventure game, and random number guesser game),
                         but I also added new games like a rock-paper-scizzors (where the computer randomly generates a number from 0 to 2 that corresponds with rock, paper, or scizzor), a random poem generator,
                        a random ascii art generator, random name generator, and random meal generator. I also made it so that that it would keep asking the user for an input until the user wanted to leave the chatbox. In addition,
@@ -203,7 +385,7 @@
               </div>
               <div class="column2">
                 <div class = "container2">
-                  <iframe allowtransparency="true" width="450" height="373" src="https://scratch.mit.edu/projects/embed/228641866/?autostart=false" frameborder="0" allowfullscreen></iframe>
+                  <p style = "margin-top: 200px; font-size: 20px"> Since the code is too long, you may click <a href = "chatboxcode.html"> here </a> to see the code </p>
                 </div>
               </div>
             </div>
