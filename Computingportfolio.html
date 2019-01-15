@@ -73,7 +73,308 @@
     at jobs where people work in teams to create awesome products. In our final project,to fulfill the PPP aspect, we were tasked to make a website
     or app that would benefit the community. We had to learn a lot about UI/UX, communication with clients and overall planning.</p>
 
+    <ul class = "projects">
+    <button class="accordion"> P5 Shapes And Animation</button>
+    <div class="panel">
+      <div class="row2"> <!-- python text adventure -->
+        <div class="column2">
+            <div class = "container2">
+              <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;  color: rgb(19,124,165)"> P5 Shape Practice</li>
+              <p > To get comfortable with using p5 and build our foundation of javascript, we practiced creating various shapes in
+                P5 with varying sizes, colors, and line weight.</p>
+              <p> Code for P5 Shapes Practice: </p>
+              <div class = "code2">
+                <p class = "code">
+                  function setup() {<br>
+                   &nbsp &nbsp &nbsp &nbsp  createCanvas(600,600);<br>
+                   &nbsp &nbsp &nbsp &nbsp background(150)<br>
+                 <br>
+                   &nbsp &nbsp &nbsp &nbsp fill(255, 204, 0);<br>
+                   &nbsp &nbsp &nbsp &nbsp stroke(255)<br>
+                   &nbsp &nbsp &nbsp &nbsp strokeWeight(5)<br>
+                   &nbsp &nbsp &nbsp &nbsp ellipse(350, 350, 300, 300);<br>
+                 <br>
+                   &nbsp &nbsp &nbsp &nbsp stroke(51)<br>
+                   &nbsp &nbsp &nbsp &nbsp strokeWeight(5)<br>
+                   &nbsp &nbsp &nbsp &nbsp fill(color(0, 0, 255));<br>
+                   &nbsp &nbsp &nbsp &nbsp rect(350, 350, 100, 100);<br>
+                 <br>
+                   &nbsp &nbsp &nbsp &nbsp stroke(35);<br>
+                   &nbsp &nbsp &nbsp &nbsp line(250,200,500,24);<br>
+                   &nbsp &nbsp &nbsp &nbsp strokeWeight(20);<br>
+                   &nbsp &nbsp &nbsp &nbsp line(50,200,50,60);<br>
+                   &nbsp &nbsp &nbsp &nbsp line(50,60,500,150);<br>
+                   <br>
+                   &nbsp &nbsp &nbsp &nbsp strokeWeight(5)<br>
+                   &nbsp &nbsp &nbsp &nbsp stroke(255)<br>
+                   &nbsp &nbsp &nbsp &nbsp arc(300, 155, 50, 50, HALF_PI+HALF_PI+QUARTER_PI,QUARTER_PI+QUARTER_PI+QUARTER_PI);<br>
+                 <br>
+                   &nbsp &nbsp &nbsp &nbsp noFill();<br>
+                   &nbsp &nbsp &nbsp &nbsp strokeWeight(15)<br>
+                   &nbsp &nbsp &nbsp &nbsp arc(50, 55, 50, 50, HALF_PI, TWO_PI - QUARTER_PI);<br>
+                 <br>
+                   &nbsp &nbsp &nbsp &nbsp bezier(150, 253, 354, 175, 1, 263, 168, 134);<br>
+                 <br>
+                  &nbsp &nbsp &nbsp &nbsp stroke(color(0,0,255));<br>
+                  &nbsp &nbsp &nbsp &nbsp strokeWeight(2);<br>
+                  &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(90,333);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(134,360);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(180,321);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(233,360);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(240,330);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(260,400);<br>
+                  &nbsp &nbsp &nbsp &nbsp vertex(138,407);<br>
+                  &nbsp &nbsp &nbsp &nbsp   vertex(90,333);<br>
+                  &nbsp &nbsp &nbsp &nbsp endShape(close);<br>
+                <br>
+                  &nbsp &nbsp &nbsp &nbsp noFill();<br>
+                 &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                 &nbsp &nbsp &nbsp &nbsp vertex(531, 540);<br>
+                 &nbsp &nbsp &nbsp &nbsp bezierVertex(550, 485, 570, 575, 538, 544);<br>
+                 &nbsp &nbsp &nbsp &nbsp bezierVertex(534,574,483,495,530,540);<br>
+                 &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                <br>
+                 &nbsp &nbsp &nbsp &nbsp triangle(230, 275, 258, 220, 286, 275);<br>
+                 &nbsp &nbsp &nbsp &nbsp triangle(230, 575, 258, 420, 286, 575);<br>
+                 &nbsp &nbsp &nbsp &nbsp triangle(330, 275, 258, 120, 186, 475);<br>
+               }
+               <br>
+               <br>
+               function draw() {<br>
+                  &nbsp &nbsp &nbsp &nbsp noStroke();<br>
+                  &nbsp &nbsp &nbsp &nbsp fill(0);<br>
+                  &nbsp &nbsp &nbsp &nbsp rect(0,0,75,20);<br>
+                <br>
+                  &nbsp &nbsp &nbsp &nbsp fill(150);<br>
+                  &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", "+mouseY+")", 5, 15);<br>
+                <br>
+                 <br>
+               }
+                </p>
+               </div>
+             </div>
+           </div>
+           <div class="column2">
+               <div class = "container2">
+                     <img class = "gameImg" src = "images/shapes.png">
+               </div>
+           </div>
+       </div>
+
+        <div class="row2"> <!-- python text adventure -->
+          <div class="column2">
+              <div class = "container2">
+                  <li style = "font-size: 30px; margin-top: auto; margin-top: 30px;  color: rgb(19,124,165)"> P5 Animation Project</li>
+                  <p > We also began to experiment with conditionals, functions, and loops in p5. With the animation project, not only did we apply what we
+                  learned from previous assignments by creating shapes, but we also had to apply new ideas like conditionals.ani </p>
+                  <img class = "gameImg" style = "width: 300px;" src = "images/animation.png">
+              </div>
+          </div>
+          <div class="column2">
+              <div class = "container2">
+                <p> Code for p5 Animation: </p>
+                <div class = "code2">
+                  <p class = "code">
+                    var sunX=1500<br>
+                    var sunY=500<br>
+                    <br>
+                    function setup() {<br>
+                      &nbsp &nbsp &nbsp &nbsp createCanvas(1500,500);<br>
+                    }
+                    <br>
+                    <br>
+                    <br>
+                    function draw() {<br>
+                      &nbsp &nbsp &nbsp &nbsp background(255,140,0);<br>
+                      &nbsp &nbsp &nbsp &nbsp sun();<br>
+                      &nbsp &nbsp &nbsp &nbsp mountains();<br>
+                    <br>
+                    <br>
+                    sunX=sunX-2<br>
+                    sunY=sunY-2<br>
+                    <br>
+                    <br>
+                    if(sunX < 1050)<br>
+                    {<br>
+                      &nbsp &nbsp &nbsp &nbsp sunX = sunX-2<br>
+                    }<br>
+                    if(sunY < 200)<br>
+                    {<br>
+                      &nbsp &nbsp &nbsp &nbsp sunY=sunY+2<br>
+                      &nbsp &nbsp &nbsp &nbsp background(155,258,258);<br>
+                      &nbsp &nbsp &nbsp &nbsp sun();<br>
+                      &nbsp &nbsp &nbsp &nbsp mountains();<br>
+                    }<br>
+                    <br>
+                    <br>
+                    if(sunX < 500)<br>
+                    {<br>
+                      &nbsp &nbsp &nbsp &nbsp sunY= sunY+4<br>
+                      &nbsp &nbsp &nbsp &nbsp background(50,50,200);<br>
+                      &nbsp &nbsp &nbsp &nbsp sun();<br>
+                      &nbsp &nbsp &nbsp &nbsp mountains();<br>
+                    }<br>
+                    }<br>
+                    <br>
+                    function mountains(){<br>
+                      &nbsp &nbsp &nbsp &nbsp fill('rgb(100,200,50)')<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(-100, 500, 75, 350, 186, 500);<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(100, 500,228, 300, 486, 500);<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(300, 500, 428, 350, 786, 500);<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(500,500,630,300,800,500);<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(550,500,1000,250,1350,550);<br>
+                      &nbsp &nbsp &nbsp &nbsp triangle(1050,500,1300,250,1500,550);<br>
+                    }<br>
+                    <br>
+                    function sun(){<br>
+                      &nbsp &nbsp &nbsp &nbsp fill('yellow');<br>
+                      &nbsp &nbsp &nbsp &nbsp ellipseMode(CENTER)<br>
+                      &nbsp &nbsp &nbsp &nbsp ellipse(sunX,sunY,100);<br>
+                    }<br>
+                  </p>
+                 </div>
+               </div>
+             </div>
+         </div>
+
+
+       </div>
+
+    <button class="accordion"> Explorable Explanations</button>
+    <div class="panel">
+      <p> For this project, we were prompted to design and program a digital learning app that enables a learner to explore a topic of our choice. We were required to include:
+        Objects, HTML / User Interface Elements, data/APIs, and/or sound. <br>
+        Because I was learning about the industrialization in history class, I decided to make an RPG game that is about the life of a worker in a factory during the industrialization. The player has to choose what to sacrifice (time, money, happiness, or health).
+        Each action they choose either deducts or adds to one of those things and they are trying to not get to zero on any of them or else it would lead to death.
+        It shows how during the industrialization, working class people didn't really have a chance of a happy life or a rich life because they were never paid enough
+        and they had to work for long hours, which caused many health problems. <br>
+      </p>
+      <p style = "float: left; margin: 50px;">
+          Two new-to-me topics I included: <br>
+          HTML / User Interface Elements- buttons that are interactive and respond to user <br>
+          Data/APIs/Images- images that appeared when a certain event happened <br>
+    </p>
+    <p style = "float: right; margin: 50px;">
+      Images from:
+    <br> <a href= "https://www.flickr.com/photos/surroundsound5000/4603946826/in/photolist-8xB9sr-8UNTVK-34N97C-KMSvr-65UcxU-dfRvKJ-o3LcNr-77Cqg2-6Lds1s-zEbW9-7A2Bri-bt29wL-qi3p6T-KMGc5-7zLupC-81QqZy-8XFe2U-8HfjqS-apNCHy-8vqye1-apPNbf-q5vNy4-qUAUg3-zVnE3-9h3HrU"> stethoscope </a>
+    <br> <a href = "https://www.flickr.com/photos/84568447@N00/2861441758/in/photolist-ifBwmg-5mRCWJ"> beer </a>
+    <br> <a href=  "https://www.flickr.com/photos/donkeyhotey/5646817128/in/photolist-3gL1X8-9AZq11-6cGxVU-8dcxFA-4mwtnL-8d9hbt-6cG93u-e5oWAt-e5uzAm-doSdfa-ewqVNA-9Dgnjz-dPouRg-6cG92q-5q8VX9-6cGxV9-6cC1Pp-9hZJn1-eFWauS-6cG98m-dPtL6A-jDQkd1-ewqBbS-eyqpi2-dPtMTQ"> coin </a>
+  </p>
+  <p style = "margin-top: 250px;"> Screenshots of screens </p>
+  <img src = "images/screen1.png">
+  <img src = "images/screen2.png">
+  <img src = "images/screen3.jpg">
+  <img src = "images/screen4.jpg">
+  <img src = "images/screen5.jpg">
+  <img src = "images/screen6.png">
+  <img src = "images/screen7.jpg">
+  <img src = "images/screen8.png">
+
+  <p> The code is extremely long, but you can click
+    <a target= "_blank" href = "https://gist.githubusercontent.com/pktse/e7bdeccc33b10ba8a5a2ba92b0874145/raw/0cccf601fc787f229d5fbbee4fa5c416bc7d9241/gistfile1.txt"> here </a>
+  to see the code </p>
+
+    <h2> Logs: </h2>
+    <p>11/21/16: I found out how buttons work and how to make it so that clicking a button changes the value that is shown.
+      I also learned how each button has its own function and my code is probably gonna end up really long. I originally
+      had a problem making it so that the values would refresh every time I clicked a button. With the help of Ms. Freed,
+      I learned that I had to redo the background every time.
+    </p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/log1.png">
+
+    <p><br> <br>11/29/16: I was able to change my code so that there would be four values rather than just one. Thanks to Cal,
+      I learned how to make my code so that when if one of the values was going to become negative when a certain button was pressed,
+      nothing would happen. So now I don't have to worry that the time would go to negative and I can apply this to when (for example)
+      the health goes down to O and a certain action happens when this is true. I was also able to come up with different scenarios.
+    </p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log2.png">
+
+    <p><br> <br>12/1/16:
+    So I came up with the intro/context and the next day and restart button. I made a restart button that would restart everything as well
+    as a value that would count how many days went by. I also made it so that when the time goes down to zero, it shows "next day" and then
+    resets the time and counts a day that passed. I just need to make something to track the highest score (most days).
+      </p>
+      <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log3.png">
+      <p>intro, context/start page</p>
+      <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log4.jpg">
+      <p>has variable that counts days</p>
+      <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log5.jpg">
+      <p>what happens when time goes down to zero. Also, it will restart the time, but keep all the other values.</p>
+      <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log6.jpg">
+      <p>this happens any time the values go down to zero (except for time) and you can restart the game.</p>
+
+
+
+      <p><br> <br>12/6/16:
+    I added in endings and images that correspond with the scenarios endings. For the one when the player runs out of money,
+    a coin image shows. For the happiness, a beer image shows. For the health, the stethoscope image shows. I now have a new-to-me
+    topic which is how to import images. I used flickr to find images without copyright restrictions. I want to make a highscore keeper,
+    but I feel like that might be too hard.
+    <br>
+    For the money:
+    </p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/log7.jpg">
+    <p>For the happiness:</p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log8.jpg">
+    <p>For the health:</p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log9.jpg">
+
+    <p><br> <br>12/7/16:
+    I made a page that shows achievements ( like they reach 100+ money or 200+ happiness). I also made it so that
+    you could go back to the menu and if you did, you would not have to restart. I am halfway through the achievements.
+    The moment you reach that achievement, a text shows it then disappears. I just have to make it so that it keeps track of which achievements
+    you have already gotten and display it on the achievements page.
+    <br>
+    Ex Achievement:
+    </p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log10.png">
+    <p>Menu Page after exiting from the game:</p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log11.png">
+
+    <p><br> <br>12/9/16:
+    I was able to debug my code. With the help of Ms. Freed, I found out that the reason my buttons kept on showing was
+    because I was constantly making more. Also, I did my achievements!!!. I have, in total, 6 achievements and I was able
+    to have the code track which achievements have already been achieved and display those on the achievements page. Also,
+    I made it so that the achievement would keep popping up after every time it was achieved. For example, if my achievement
+    is 200+ happiness and I achieve it at 200, and I press a button and I get a 205 happiness, the achievement won't show up again.
+    </p>
+    <img style = "width: 500px; border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/log12.png">
+</div>
+
+
+
+    <button class="accordion"> Textile Project</button>
+    <div class="panel">
+      <img class = "gameImg" src = "images/metal.png">
+      <p> For our final projects, </p>
     </div>
+
+    <button class="accordion"> Make It Parametric </button>
+    <div class="panel">
+      <img class = "gameImg" src = "images/metal.png">
+      <p> For our final projects, </p>
+    </div>
+
+    </ul>
+
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
 
     <br> <br> <br> <br>
 

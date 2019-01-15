@@ -83,10 +83,46 @@
       In all our projects from these two classes, we learned the importance of time management, perserverance and prototyping. Through time management, we
       were able to make sure that our projects would actually get done on time. Perserverance was super important, especially when we had to trouble-shoot
       our code or look for small mistakes in our circuits.
+    </p>
 
-     <p>
+       <ul class = "projects">
+       <button class="accordion"> Pinewood Derby Car</button>
+       <div class="panel">
+         <img class = "gameImg" src = "images/car.png">
+         <p> For our final projects, </p>
+       </div>
 
+       <button class="accordion"> Hydraulics, Pneumatics, and Linkages Project</button>
+       <div class="panel">
+         <img class = "gameImg" src = "images/ramp.png">
+         <p> For our final projects, </p>
+       </div>
+
+       <button class="accordion"> Final Project</button>
+       <div class="panel">
+         <img class = "gameImg" src = "images/metal.png">
+         <p> For our final projects, </p>
+       </div>
+
+       </ul>
     </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
 
     <br> <br> <br> <br>
 
