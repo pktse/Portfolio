@@ -11,6 +11,8 @@ line {
   left: 20%;
 }
 
+
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -335,6 +337,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
+  font-family: 'Roboto Mono', monospace;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
