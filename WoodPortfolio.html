@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Wood Portfolio </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body onload = "currentSlide(1)">
+    <ul id = "nav">
+      <li class = "nav" style = "float: left; "><a style = "font-size: 30px; color: black " href = "index.html"> Patricia Tse </a> </li>
+      <li class = "nav"><a href = "index.html"> About Me</a> </li>
+      <li class = "nav"><a href = "contact.html"> Contact</a> </li>
+      <li class = "nav"><a href = "portfolio.html" onclick="popup()"> Projects </a></li>
+      <li class = "nav"><a href = "resume.html"> Resume</a> </li>
+    </ul>
+    <div class = "portfolioTxt">
+      <h1> Lick Wilmerding High School - Technical Arts</h1>
+      <h2> Wood: Joinery and Turning</h2>
+      <h2 style = "color: red; text-align:center"> Currently In Progress </h2>
+    </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/phoneholder.JPG" style="width:100%">
+          <div class="text">Wooden Phone Holder</div>
+        </div>
+
+        <!-- <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/speaker.jpeg" style="width:100%">
+          <div class="text">Bluetooth MDF speaker</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/wireless.jpg" style="width:100%">
+          <div class="text">Wireless internet-connected display</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/solar.jpg" style="width:100%">
+          <div class="text">Solar powered charging box</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        -->
+      </div>
+
+    <div class = "portfolioTxt">
+      <p>
+    </p>
+
+       <ul class = "projects">
+       <button class="accordion"> Phone Holder </button>
+       <div class="panel">
+         <br>
+         <img class = "gameImg" src = "images/phoneholder.JPG">
+         <p> With a partner, we were assigned a project to make a phone holder than fit within a 8x8x8 box, was less than one pound, is functional, and uses at least 2 CNC machines and 2 materials. <br><br>
+         We began the project by brainstorming ideas. After choosing an idea, we began building. Using the 3d printer, we created a hat. Using the CNC, we cut out the wood base. Lastly, we used the laser cutter
+       to cut out teeth. We then glued them all together. </p> <br>
+       <h3> initial designs </h3>
+       <table style="width:100%">
+         <tr>
+           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/design1.JPG"> </th>
+           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/design2.JPG"> </th>
+           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/phone-holder/design3.JPG"> </th>
+          </tr>
+        <tr>
+          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/design4.JPG"> </th>
+          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/phone-holder/design5.JPG"> </th>
+          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/design6.JPG"> </th>
+          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/phone-holder/design7.JPG"> </th>
+         </tr>
+       </table>
+       <h3> final design </h3>
+       <table style="width:100%">
+         <tr>
+           <th><img style = "width: 190%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/final1.png"> </th>
+           <th><img style = "width: 190%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/phone-holder/final2.png"> </th>
+           <th><img style = "height: 20%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/phone-holder/final3.JPG"> </th>
+          </tr>
+        </table>
+
+       </div>
+
+       </ul>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+    <br> <br> <br> <br>
+
+    <footer>
+      <p id="copyright"> Designed and Coded by Patricia Tse </p>
+      <a class = "social" href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <img src = "ig.png"> </a>
+      <a class = "social" href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <img src = "linkedin.png"> </a>
+      <a class = "social" href = "https://www.facebook.com/"> <img src = "fb.png"> </a>
+    </footer>
+  </body>
+
+</html>
