@@ -158,7 +158,7 @@
            </div>
            <div class="column2">
                <div class = "container2">
-                     <img class = "gameImg" src = "images/Computing/shapes.png">
+                     <img class = "gameImg" style = "text-align: center; width: 100%; height: auto;"src = "images/Computing/shapes.png">
                </div>
            </div>
        </div>
@@ -457,604 +457,659 @@
         were so thin and they kept on puffing up.</p>
         <img style = "border-radius: 0%; border: 1px solid rgb(19,124,165);"src = "images/Computing/peony.jpg">
         <h1> Logs: </h1>
+        <hr>
         <h4> 9/20/16 </h4>
         <p>I was able to make the flower code and make it go in a full circle without overlapping each other.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/1log.png">
+
           <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              function setup() {<br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1200,1200);<br>
-                &nbsp &nbsp &nbsp &nbsp background(255);<br>
-              }<br>
-              <br>
-              function draw() {<br>
-                &nbsp &nbsp &nbsp &nbsp //white background rectangle<br>
-                &nbsp &nbsp &nbsp &nbsp noStroke();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(255);<br>
-                &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
-                <br>
-                &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
-                &nbsp &nbsp &nbsp &nbsp fill(255, 0, 0);<br>
-                &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
-                &nbsp &nbsp &nbsp &nbsp drawLeaf();<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp translate(200,100);<br>
-                &nbsp &nbsp &nbsp &nbsp drawFlower();<br>
-                &nbsp &nbsp &nbsp &nbsp translate(50,-150);<br>
-                &nbsp &nbsp &nbsp &nbsp drawSecond();<br>
-                &nbsp &nbsp &nbsp &nbsp translate(-50,300);<br>
-                &nbsp &nbsp &nbsp &nbsp drawThird();<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-                &nbsp &nbsp &nbsp &nbsp // for (var times = 0; times<=30;time++){<br>
-                &nbsp &nbsp &nbsp &nbsp // var rand= random(0, scale);<br>
-                &nbsp &nbsp &nbsp &nbsp // var rando= random(0, fill);<br>
-                &nbsp &nbsp &nbsp &nbsp // var array=[];<br>
-                &nbsp &nbsp &nbsp &nbsp // array. add(rand + rando);<br>
-                &nbsp &nbsp &nbsp &nbsp // for (var tempo = 0; tempo <= array.length; temp++){<br>
-                &nbsp &nbsp &nbsp &nbsp // if (rand + rando == array[temp]);<br>
-                &nbsp &nbsp &nbsp &nbsp // times=times-1;<br>
-                &nbsp &nbsp &nbsp &nbsp // else {<br>
-                &nbsp &nbsp &nbsp &nbsp // drawflower();<br>
-                &nbsp &nbsp &nbsp &nbsp // }<br>
-                &nbsp &nbsp &nbsp &nbsp // }<br>
-                &nbsp &nbsp &nbsp &nbsp // }<br>
-              }<br>
-                <br>
-              function drawFlower(){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(223,77,113);<br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(223,77,113);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-              }<br>
-                <br>
-              function drawSecond(){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp stroke(177,89,182);<br>
-                &nbsp &nbsp &nbsp &nbsp scale(0.5,0.5);<br>
-                &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-              }<br>
-                <br>
-              function drawThird(){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp stroke(199,0,60);<br>
-                &nbsp &nbsp &nbsp &nbsp scale(0.35,0.35);<br>
-                &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-              }<br>
-                <br>
-              function drawLeaf(){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp strokeWeight(10);<br>
-                &nbsp &nbsp &nbsp &nbsp stroke(33,199,53);<br>
-                &nbsp &nbsp &nbsp &nbsp line(725, 185,750,125);<br>
-                &nbsp &nbsp &nbsp &nbsp line(750,125,818,112);<br>
-                &nbsp &nbsp &nbsp &nbsp line(818,112,793,167);<br>
-                &nbsp &nbsp &nbsp &nbsp line(793,167,753,180);<br>
-                &nbsp &nbsp &nbsp &nbsp line(753,180,768,147);<br>
-                &nbsp &nbsp &nbsp &nbsp line(768, 147,777,144);<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-              }<br>
-              <br>
-            </p>
-           </div>
+          <table style = "width: 100%; padding: 0px;">
+            <tr style = "width: 100%; padding: 0px;">
+              <th style = "width: 50%; padding: 0px;">
+                <p> Code: </p>
+                <div class = "code2">
+                  <p class = "code">
+                    function setup() {<br>
+                      &nbsp &nbsp &nbsp &nbsp createCanvas(1200,1200);<br>
+                      &nbsp &nbsp &nbsp &nbsp background(255);<br>
+                    }<br>
+                    <br>
+                    function draw() {<br>
+                      &nbsp &nbsp &nbsp &nbsp //white background rectangle<br>
+                      &nbsp &nbsp &nbsp &nbsp noStroke();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(255);<br>
+                      &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
+                      <br>
+                      &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(255, 0, 0);<br>
+                      &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
+                      &nbsp &nbsp &nbsp &nbsp drawLeaf();<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(200,100);<br>
+                      &nbsp &nbsp &nbsp &nbsp drawFlower();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(50,-150);<br>
+                      &nbsp &nbsp &nbsp &nbsp drawSecond();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(-50,300);<br>
+                      &nbsp &nbsp &nbsp &nbsp drawThird();<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                      &nbsp &nbsp &nbsp &nbsp // for (var times = 0; times<=30;time++){<br>
+                      &nbsp &nbsp &nbsp &nbsp // var rand= random(0, scale);<br>
+                      &nbsp &nbsp &nbsp &nbsp // var rando= random(0, fill);<br>
+                      &nbsp &nbsp &nbsp &nbsp // var array=[];<br>
+                      &nbsp &nbsp &nbsp &nbsp // array. add(rand + rando);<br>
+                      &nbsp &nbsp &nbsp &nbsp // for (var tempo = 0; tempo <= array.length; temp++){<br>
+                      &nbsp &nbsp &nbsp &nbsp // if (rand + rando == array[temp]);<br>
+                      &nbsp &nbsp &nbsp &nbsp // times=times-1;<br>
+                      &nbsp &nbsp &nbsp &nbsp // else {<br>
+                      &nbsp &nbsp &nbsp &nbsp // drawflower();<br>
+                      &nbsp &nbsp &nbsp &nbsp // }<br>
+                      &nbsp &nbsp &nbsp &nbsp // }<br>
+                      &nbsp &nbsp &nbsp &nbsp // }<br>
+                    }<br>
+                      <br>
+                    function drawFlower(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(223,77,113);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(223,77,113);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                      <br>
+                    function drawSecond(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(177,89,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(0.5,0.5);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                      <br>
+                    function drawThird(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(199,0,60);<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(0.35,0.35);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                      <br>
+                    function drawLeaf(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp strokeWeight(10);<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(33,199,53);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(725, 185,750,125);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(750,125,818,112);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(818,112,793,167);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(793,167,753,180);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(753,180,768,147);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(768, 147,777,144);<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                    <br>
+                  </p>
+                 </div>
+              </th>
+              <th style = "width: 50%; padding: 0px;">
+                <img style = "width: 85%; margin: 1%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/1log.png">
+              </th>
+            </tr>
+          </table>
+
+
         <hr>
 
         <h4> 9/26/16 </h4>
         <p>I found the range of randomness of the colors for the flower as well as the size,
           but the translation doesn't seem right. It keeps on forming all the smaller flowers in
           the top left corner and all the large flower in the bottom right corner.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/2log.png">
-          <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              function setup() { <br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1200,1200);<br>
-                &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=10;i++){<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(0,500), random(0,500), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-              }<br>
-                // for(var i=0; i &lt;10;i==){<br>
-                // flower(random (i*100,i*100+100),...)<br>
-                // }<br>
-                <br>
-              function draw() {<br>
-                &nbsp &nbsp &nbsp &nbsp //white background rectangle<br>
-                &nbsp &nbsp &nbsp &nbsp noStroke();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(255);<br>
-                &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
-                &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
-                &nbsp &nbsp &nbsp &nbsp fill(75,75,175);<br>
-                &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
-                &nbsp &nbsp &nbsp &nbsp // drawFlower(random(0,500), random(0,500), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
-                <br>
-                &nbsp &nbsp &nbsp &nbsp // drawFlower(200,100);<br>
-                &nbsp &nbsp &nbsp &nbsp // drawFlower(random(0,width), random(0,height), random(0,1), random(0,255),random(0,255),random(0,255));<br>
-                &nbsp &nbsp &nbsp &nbsp // drawLeaf();<br>
-                &nbsp &nbsp &nbsp &nbsp // push();<br>
-                &nbsp &nbsp &nbsp &nbsp // translate(200,100);<br>
-                &nbsp &nbsp &nbsp &nbsp // drawFlower();<br>
-                &nbsp &nbsp &nbsp &nbsp // translate(50,-150);<br>
-                &nbsp &nbsp &nbsp &nbsp // drawSecond();<br>
-                &nbsp &nbsp &nbsp &nbsp // translate(-50,300);<br>
-                &nbsp &nbsp &nbsp &nbsp // drawThird();<br>
-                &nbsp &nbsp &nbsp &nbsp // pop();<br>
-                <br>
-                &nbsp &nbsp &nbsp &nbsp // for (var times = 0; times<=30;time++){<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var rand= random(0, scale);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var rando= random(0, fill);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var array=[];<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // array. add(rand + rando);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // for (var tempo = 0; tempo <= array.length; temp++){<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // if (rand + rando == array[temp]);<br>
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // times=times-1;<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // }<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // else {<br>
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // drawflower();<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // }<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // } <br>
-                  &nbsp &nbsp &nbsp &nbsp // }<br>
-              }<br>
-                <br>
-                // flower code with bezier curves<br>
-                function drawFlower(x,y,z,a,b,c,d){<br>
-                  &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp scale(z);<br>
-                  &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
-                  &nbsp &nbsp &nbsp &nbsp rotate(radians(d));<br>
-                  &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
-                  &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                  &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp }<br>
-                  &nbsp &nbsp &nbsp &nbsp pop();<br>
-                  &nbsp &nbsp &nbsp &nbsp translate<br>
-                }<br>
-                <br>
-                // smaller flower<br>
-                function drawSecond(){<br>
-                  &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp stroke(177,89,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp scale(0.5,0.5);<br>
-                  &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp }<br>
-                  &nbsp &nbsp &nbsp &nbsp pop();<br>
-                }<br>
-                <br>
-                // draw third flower<br>
-                function drawThird(){<br>
-                  &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp stroke(199,0,60);<br>
-                  &nbsp &nbsp &nbsp &nbsp scale(0.35,0.35);<br>
-                  &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
-                  &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp }<br>
-                 &nbsp &nbsp &nbsp &nbsp pop();<br>
-                }<br>
-                <br>
-                // leaf code (may not use)<br>
-                function drawLeaf(){<br>
-                  &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp strokeWeight(10);<br>
-                  &nbsp &nbsp &nbsp &nbsp stroke(33,199,53);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(725, 185,750,125);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(750,125,818,112);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(818,112,793,167);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(793,167,753,180);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(753,180,768,147);<br>
-                  &nbsp &nbsp &nbsp &nbsp line(768, 147,777,144);<br>
-                  &nbsp &nbsp &nbsp &nbsp pop();<br>
-              }<br>
-              <br>
-            </p>
-           </div>
+            <br>
+          <table style = "width: 100%;">
+            <tr>
+              <th style = "width: 50%; padding: 0px;">
+                <img style = "width: 85%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/2log.png">
+              </th>
+              <th style = "width: 50%; padding: 0px;">
+              <p> Code: </p>
+              <div class = "code2">
+                <p class = "code">
+                  function setup() { <br>
+                    &nbsp &nbsp &nbsp &nbsp createCanvas(1200,1200);<br>
+                    &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=10;i++){<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(0,500), random(0,500), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    &nbsp &nbsp &nbsp &nbsp }<br>
+                  }<br>
+                    // for(var i=0; i &lt;10;i==){<br>
+                    // flower(random (i*100,i*100+100),...)<br>
+                    // }<br>
+                    <br>
+                  function draw() {<br>
+                    &nbsp &nbsp &nbsp &nbsp //white background rectangle<br>
+                    &nbsp &nbsp &nbsp &nbsp noStroke();<br>
+                    &nbsp &nbsp &nbsp &nbsp fill(255);<br>
+                    &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
+                    &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
+                    &nbsp &nbsp &nbsp &nbsp fill(75,75,175);<br>
+                    &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawFlower(random(0,500), random(0,500), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp // drawFlower(200,100);<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawFlower(random(0,width), random(0,height), random(0,1), random(0,255),random(0,255),random(0,255));<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawLeaf();<br>
+                    &nbsp &nbsp &nbsp &nbsp // push();<br>
+                    &nbsp &nbsp &nbsp &nbsp // translate(200,100);<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawFlower();<br>
+                    &nbsp &nbsp &nbsp &nbsp // translate(50,-150);<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawSecond();<br>
+                    &nbsp &nbsp &nbsp &nbsp // translate(-50,300);<br>
+                    &nbsp &nbsp &nbsp &nbsp // drawThird();<br>
+                    &nbsp &nbsp &nbsp &nbsp // pop();<br>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp // for (var times = 0; times<=30;time++){<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var rand= random(0, scale);<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var rando= random(0, fill);<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // var array=[];<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // array. add(rand + rando);<br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // for (var tempo = 0; tempo <= array.length; temp++){<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // if (rand + rando == array[temp]);<br>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // times=times-1;<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // }<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // else {<br>
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // drawflower();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // }<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // } <br>
+                      &nbsp &nbsp &nbsp &nbsp // }<br>
+                  }<br>
+                    <br>
+                    // flower code with bezier curves<br>
+                    function drawFlower(x,y,z,a,b,c,d){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(z);<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
+                      &nbsp &nbsp &nbsp &nbsp rotate(radians(d));<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate<br>
+                    }<br>
+                    <br>
+                    // smaller flower<br>
+                    function drawSecond(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(177,89,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(0.5,0.5);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(177,89,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                    <br>
+                    // draw third flower<br>
+                    function drawThird(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(199,0,60);<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(0.35,0.35);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(199,0,60);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                     &nbsp &nbsp &nbsp &nbsp pop();<br>
+                    }<br>
+                    <br>
+                    // leaf code (may not use)<br>
+                    function drawLeaf(){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp strokeWeight(10);<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(33,199,53);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(725, 185,750,125);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(750,125,818,112);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(818,112,793,167);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(793,167,753,180);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(753,180,768,147);<br>
+                      &nbsp &nbsp &nbsp &nbsp line(768, 147,777,144);<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                  }<br>
+                  <br>
+                </p>
+               </div>
+              </th>
+            </tr>
+          </table>
         <hr>
 
         <h4> 9/27/16 </h4>
         <p>I changed it so that the scale doesn't shift. I still have to make the code so that it won't overlap each other.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/3log.png">
           <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              var scalingFactor = 1;<br>
-              var x = (0,500);<br>
-              var y = (0,500);<br>
-              var z = (scalingFactor);<br>
-              var h = 30;<br>
-              <br>
-              function setup() {<br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1000,1000);<br>
-                &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
-                <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 15;i++)<br>
-                &nbsp &nbsp &nbsp &nbsp {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(20,750), random(20,750), random(.01,.65), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-              }<br>
-              <br>
-              function draw() {<br>
-                <br>
-              }<br>
-              <br>
-              function drawFlower(x,y,z,a,b,c,d){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp scale(z);<br>
-                &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
-                &nbsp &nbsp &nbsp &nbsp rotate(radians(d));<br>
-                &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
-                &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-                &nbsp &nbsp &nbsp &nbsp translate<br>
-              }<br>
-              <br>
-            </p>
-           </div>
+            <table style = "width: 100%;">
+              <tr>
+                <th style = "width: 50%; padding: 0px;">
+                  <p> Code: </p>
+                <div class = "code2">
+                  <p class = "code">
+                    var scalingFactor = 1;<br>
+                    var x = (0,500);<br>
+                    var y = (0,500);<br>
+                    var z = (scalingFactor);<br>
+                    var h = 30;<br>
+                    <br>
+                    function setup() {<br>
+                      &nbsp &nbsp &nbsp &nbsp createCanvas(1000,1000);<br>
+                      &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
+                      <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 15;i++)<br>
+                      &nbsp &nbsp &nbsp &nbsp {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(20,750), random(20,750), random(.01,.65), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                    }<br>
+                    <br>
+                    function draw() {<br>
+                      <br>
+                    }<br>
+                    <br>
+                    function drawFlower(x,y,z,a,b,c,d){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(z);<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
+                      &nbsp &nbsp &nbsp &nbsp rotate(radians(d));<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate<br>
+                    }<br>
+                    <br>
+                  </p>
+                 </div>
+                </th>
+                <th style = "width: 50%; padding: 0px;">
+                  <img style = "width: 85%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/3log.png">
+                </th>
+              </tr>
+            </table>
+
         <hr>
 
         <h4> 9/28/16 </h4>
         <p>I completely backtracked and now there are no more visible flowers, but random shapes, but now it fits inside my designated areas.
           I still need to find a way to make it not overlap. Or I could just roll with it.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/4log.png">
           <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              var scalingFactor = 1; <br>
-              var x = (0,500);<br>
-              var y = (0,500);<br>
-              var z = (scalingFactor);<br>
-              var h = 30;<br>
-              <br>
-              function setup() {<br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1250,1250);<br>
-                &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 5;i++)<br>
-                &nbsp &nbsp &nbsp &nbsp {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(500,750), random(500,750), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 5;i++)<br>
-                &nbsp &nbsp &nbsp &nbsp {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(100,250), random(250,750), random(.1,.75), random(575,850),random(475,550),random(450,555)), random(1,360);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-              }<br>
-              <br>
-              function draw() {<br>
-                &nbsp &nbsp &nbsp &nbsp noStroke();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(255);<br>
-                &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
-                &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
-                &nbsp &nbsp &nbsp &nbsp fill(75,75,175);<br>
-                &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
-              }<br>
-              <br>
-              function drawFlower(x,y,z,a,b,c){<br>
-                &nbsp &nbsp &nbsp &nbsp push();<br>
-                &nbsp &nbsp &nbsp &nbsp scale(z);<br>
-                &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
-                &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
-                &nbsp &nbsp &nbsp &nbsp ellipse(x,y,10,10);<br>
-                &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                &nbsp &nbsp &nbsp &nbsp vertex(x,y);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(x-75,y-136,x-27,y-309,x+92,y-196);<br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(x-3,y-256,x-59,y-133,x+1,y+1);<br>
-                &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(x,y);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(x-75,y-136,x-27,y-309,x+92,y-196);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(x-3,y-256,x-59,y-133,x+1,y+1);<br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
-                &nbsp &nbsp &nbsp &nbsp }<br>
-                &nbsp &nbsp &nbsp &nbsp pop();<br>
-                &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
-              }<br>
-              <br>
-            </p>
-           </div>
+
+          <table style = "width: 100%;">
+            <tr>
+              <th style = "width: 50%; padding: 0px;">
+            <img style = "width: 85%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/4log.png">
+              </th>
+              <th style = "width: 50%; padding: 0px;">
+                <p> Code: </p>
+                <div class = "code2">
+                  <p class = "code">
+                    var scalingFactor = 1; <br>
+                    var x = (0,500);<br>
+                    var y = (0,500);<br>
+                    var z = (scalingFactor);<br>
+                    var h = 30;<br>
+                    <br>
+                    function setup() {<br>
+                      &nbsp &nbsp &nbsp &nbsp createCanvas(1250,1250);<br>
+                      &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225);<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 5;i++)<br>
+                      &nbsp &nbsp &nbsp &nbsp {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(500,750), random(500,750), random(.1,.75), random(175,250),random(275,350),random(250,355)), random(1,360);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=0;i &lt; 5;i++)<br>
+                      &nbsp &nbsp &nbsp &nbsp {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp push();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-x*(scalingFactor-1), -y*(scalingFactor-1));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp // translate(-w*scalingFactor/2, -h*scalingFactor/2); //add this line to grow from center<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scale(scalingFactor);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(100,250), random(250,750), random(.1,.75), random(575,850),random(475,550),random(450,555)), random(1,360);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pop();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp scalingFactor += .005;<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                    }<br>
+                    <br>
+                    function draw() {<br>
+                      &nbsp &nbsp &nbsp &nbsp noStroke();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(255);<br>
+                      &nbsp &nbsp &nbsp &nbsp rect(0, 0, 75, 20);<br>
+                      &nbsp &nbsp &nbsp &nbsp //text showing mouse coordinates<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(75,75,175);<br>
+                      &nbsp &nbsp &nbsp &nbsp text("("+mouseX + ", " + mouseY+")", 5, 15);<br>
+                    }<br>
+                    <br>
+                    function drawFlower(x,y,z,a,b,c){<br>
+                      &nbsp &nbsp &nbsp &nbsp push();<br>
+                      &nbsp &nbsp &nbsp &nbsp scale(z);<br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(a,b,c)<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
+                      &nbsp &nbsp &nbsp &nbsp ellipse(x,y,10,10);<br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(x,y);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(x-75,y-136,x-27,y-309,x+92,y-196);<br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(x-3,y-256,x-59,y-133,x+1,y+1);<br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) {<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30));<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355)<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape();<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(x,y);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(x-75,y-136,x-27,y-309,x+92,y-196);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(x-3,y-256,x-59,y-133,x+1,y+1);<br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();<br>
+                      &nbsp &nbsp &nbsp &nbsp }<br>
+                      &nbsp &nbsp &nbsp &nbsp pop();<br>
+                      &nbsp &nbsp &nbsp &nbsp translate(x,y);<br>
+                    }<br>
+                    <br>
+                  </p>
+                 </div>
+              </th>
+            </tr>
+          </table>
         <hr>
 
         <h4> 9/29/16 </h4>
         <p>I decided to just stop trying to make the shapes randomly sized and randomly placed because I found out
           that my flowers aren't actually generated from the center of each flower. I am quite happy with this,
           but I'm trying to make it so that there is a smaller one every other. </p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/5log.png">
           <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              function setup() { <br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1250,1250); <br>
-                &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(-75,-25) <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=11;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp row(); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-              } <br>
-               <br>
-              function draw() { <br>
-                 <br>
-              } <br>
-               <br>
-              // draw flower <br>
-              function drawFlower(a,b,c){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp stroke(a,b,c) <br>
-                &nbsp &nbsp &nbsp &nbsp scale(.25); <br>
-                 <br>
-                &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate <br>
-              } <br>
-               <br>
-              // row of flowers <br>
-              function row(){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=11;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(175,250),random(275,350),random(250,355)) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(100,0); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
-              } <br>
-              <br>
-            </p>
-           </div>
+
+          <table style = "width: 100%;">
+            <tr>
+              <th style = "width: 50%; padding: 0px;">
+                <p> Code: </p>
+                <div class = "code2">
+                  <p class = "code">
+                    function setup() { <br>
+                      &nbsp &nbsp &nbsp &nbsp createCanvas(1250,1250); <br>
+                      &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225); <br>
+                      &nbsp &nbsp &nbsp &nbsp translate(-75,-25) <br>
+                      &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=11;i++){ <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp row(); <br>
+                      &nbsp &nbsp &nbsp &nbsp } <br>
+                    } <br>
+                     <br>
+                    function draw() { <br>
+                       <br>
+                    } <br>
+                     <br>
+                    // draw flower <br>
+                    function drawFlower(a,b,c){ <br>
+                      &nbsp &nbsp &nbsp &nbsp push(); <br>
+                      &nbsp &nbsp &nbsp &nbsp stroke(a,b,c) <br>
+                      &nbsp &nbsp &nbsp &nbsp scale(.25); <br>
+                       <br>
+                      &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                      &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                      &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                      &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                      &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355) <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                      &nbsp &nbsp &nbsp &nbsp } <br>
+                      &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                      &nbsp &nbsp &nbsp &nbsp translate <br>
+                    } <br>
+                     <br>
+                    // row of flowers <br>
+                    function row(){ <br>
+                      &nbsp &nbsp &nbsp &nbsp push(); <br>
+                      &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=11;i++){ <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(175,250),random(275,350),random(250,355)) <br>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(100,0); <br>
+                      &nbsp &nbsp &nbsp &nbsp } <br>
+                      &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                      &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
+                    } <br>
+                    <br>
+                  </p>
+                 </div>
+              </th>
+              <th style = "width: 50%; padding: 0px;">
+              <img style = "width: 85%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/5log.png">
+              </th>
+            </tr>
+          </table>
+
         <hr>
 
 
         <h4> 9/23/16 </h4>
         <p>I made it so that every shape is aligned and constant. I think I am finally done.
           I am happy with the shapes, colors and the positioning. I just need to figure out what I want to use my fabric for.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/6log.png">
-          <br>
-          <p> Code: </p>
-          <div class = "code2">
-            <p class = "code">
-              function setup() { <br>
-                &nbsp &nbsp &nbsp &nbsp createCanvas(1300,1300); <br>
-                &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(-75,-25) <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp row(); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(0,25); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rowtwo(); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-1625,125); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-              } <br>
-               <br>
-              function draw() { <br>
-                 <br>
-              } <br>
-               <br>
-              // draw flower <br>
-              function drawFlower(a,b,c){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp stroke(a,b,c) <br>
-                &nbsp &nbsp &nbsp &nbsp scale(.25); <br>
-                &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate <br>
-              } <br>
-               <br>
-              function drawTwo(a,b,c){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(-35,-30); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
-                &nbsp &nbsp &nbsp &nbsp stroke(a,b,c); <br>
-                &nbsp &nbsp &nbsp &nbsp scale(.1); <br>
-                &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-              } <br>
-               <br>
-              // row of flowers <br>
-              function row(){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(175,250),random(275,350),random(250,355)) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawTwo (random(175,250),random(275,350),random(250,355)) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
-              }
-               <br>
-              function rowtwo(){ <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(-125,0); <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=5;i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawTwo (random(175,250),random(275,350),random(250,355)) <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-                &nbsp &nbsp &nbsp &nbsp pop(); <br>
-                &nbsp &nbsp &nbsp &nbsp push(); <br>
-                &nbsp &nbsp &nbsp &nbsp translate(125,0); <br>
-                &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=5; i++){ <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower (random(175,250),random(275,350),random(250,355)); <br>
-                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
-                &nbsp &nbsp &nbsp &nbsp } <br>
-              } <br>
-              <br>
-            </p>
-           </div>
+          <table style = "width: 100%; padding: 0px;">
+            <tr style = "width: 100%; padding: 0px;">
+              <th style = "width: 50%; padding: 0px;">
+            <img style = "width: 85%; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/Computing/6log.png">
+              </th>
+              <th style = "width: 50%; padding: 0px;">
+              <p> Code: </p>
+              <div class = "code2">
+                <p class = "code">
+                  function setup() { <br>
+                    &nbsp &nbsp &nbsp &nbsp createCanvas(1300,1300); <br>
+                    &nbsp &nbsp &nbsp &nbsp background(75, 120,225,225); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(-75,-25) <br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp row(); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(0,25); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rowtwo(); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(-1625,125); <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                  } <br>
+                   <br>
+                  function draw() { <br>
+                     <br>
+                  } <br>
+                   <br>
+                  // draw flower <br>
+                  function drawFlower(a,b,c){ <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp stroke(a,b,c) <br>
+                    &nbsp &nbsp &nbsp &nbsp scale(.25); <br>
+                    &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                    &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                    &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                    &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                    &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                    &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                    &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                    &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate <br>
+                  } <br>
+                   <br>
+                  function drawTwo(a,b,c){ <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(-35,-30); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp stroke(a,b,c); <br>
+                    &nbsp &nbsp &nbsp &nbsp scale(.1); <br>
+                    &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                    &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                    &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                    &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                    &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                    &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                    &nbsp &nbsp &nbsp &nbsp for(var i=1;i<=11;i++) { <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp rotate(radians(30)); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(125,-355) <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp beginShape(); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp fill(a,b,c); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp vertex(522,378); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(447,242,495,69,614,182); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp bezierVertex(519,122,463,245,523,379); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp endShape();  <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                    &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                  } <br>
+                   <br>
+                  // row of flowers <br>
+                  function row(){ <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower(random(175,250),random(275,350),random(250,355)) <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                    &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=4;i++){ <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawTwo (random(175,250),random(275,350),random(250,355)) <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                    &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(0,100); <br>
+                  }
+                   <br>
+                  function rowtwo(){ <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(-125,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=5;i++){ <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawTwo (random(175,250),random(275,350),random(250,355)) <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                    &nbsp &nbsp &nbsp &nbsp pop(); <br>
+                    &nbsp &nbsp &nbsp &nbsp push(); <br>
+                    &nbsp &nbsp &nbsp &nbsp translate(125,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp for (var i=0; i<=5; i++){ <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp drawFlower (random(175,250),random(275,350),random(250,355)); <br>
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp translate(250,0); <br>
+                    &nbsp &nbsp &nbsp &nbsp } <br>
+                  } <br>
+                  <br>
+                </p>
+               </div>
+              </th>
+            </tr>
+          </table>
         <hr>
 
         <h1> Sources: </h1>
