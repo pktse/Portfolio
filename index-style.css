@@ -74,15 +74,13 @@ body, html {
 /******************** footer ********************/
 
 .footer {
-    position: relative;
-	background-color: transparent;
+	background-color: black;
 	color: #eeeeee;
     height: 90%;
 	padding: 50px 0;
 }
 
 .footer_container {
-    position: relative;
 	text-align: center;
 	margin: 20px auto;
 }
