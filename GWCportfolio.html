@@ -5,20 +5,29 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "general_style.css">
     <script src = "script.js"> </script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
   </head>
 
   <body onload = "currentSlide(1)">
-      <ul id = "nav">
-        <li class = "nav" style = "float: left; "><a style = "font-size: 30px; color: black " href = "index.html"> Patricia Tse </a> </li>
-        <li class = "nav"><a href = "index.html"> About Me</a> </li>
-        <li class = "nav"><a href = "contact.html"> Contact</a> </li>
-        <li class = "nav"><a href = "portfolio.html" onclick="popup()"> Projects </a></li>
-        <li class = "nav"><a href = "resume.html"> Resume</a> </li>
-        <li class = "nav"><a href = "design.html"> Design </a> </li>
-      </ul>
+      <div class = "nav_bar">
+          <div class = "nav_bar_container">
+              <div class = "nav_bar_name">
+                  <strong><a href = "index.html"> patricia tse </a></strong>
+              </div>
+              <div class = "nav_bar_links">
+                  <ul>
+                      <li><a href = "index.html"> about </a> </li>
+                      <li><a href = "index.html#contact"> contact</a> </li>
+                      <li><a href = "portfolio.html" onclick="popup()"> projects </a></li>
+                      <li><a href = "resume.html"> resume</a> </li>
+                      <li><a href = "design.html"> design </a> </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
 
     <div class = "portfolioTxt">
       <h1> Girls Who Code - Summer Immersion Program </h1>
@@ -866,11 +875,15 @@
     }
     </script>
 
-    <footer>
-      <p id="copyright"> Designed and Coded by Patricia Tse </p>
-      <a class = "social" href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <img src = "social_media/ig.png"> </a>
-      <a class = "social" href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <img src = "social_media/linkedin.png"> </a>
-      <a class = "social" href = "https://www.facebook.com/patriciakytse" target="_blank"> <img src = "social_media/fb.png"> </a>
+    <footer class = "footer">
+        <div class = "footer_container">
+            <ul class = "social_m_icons">
+                <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
+                <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
+                <li><a class="border-animation"href = "https://www.facebook.com/patriciakytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
+            </ul>
+            <p> Designed and Coded by Patricia Tse </p>
+        </div>
     </footer>
   </body>
 

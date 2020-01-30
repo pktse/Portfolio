@@ -1,150 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Patricia Tse </title>
-    <link rel = "stylesheet" href = "style.css">
-    <script src = "script.js"> </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond" rel="stylesheet">
+    <head>
+        <title> Patricia Tse </title>
+        <link rel = "stylesheet" href = "general_style.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "index-style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond" rel="stylesheet">
+    </head>
 
-    <style>
-    body, html {
-      height: 100%;
-    }
+    <body>
+        <a id = "about"> </a>
+        <div class = "nav_bar">
+            <div class = "nav_bar_container">
+                <div class = "nav_bar_name">
+                    <strong><a href = "#about"> patricia tse </a></strong>
+                </div>
+                <div class = "nav_bar_links">
+                    <ul>
+                        <li><a href = "#about"> about </a> </li>
+                        <li><a href = "#contact"> contact</a> </li>
+                        <li><a href = "portfolio.html" onclick="popup()"> projects </a></li>
+                        <li><a href = "resume.html"> resume</a> </li>
+                        <li><a href = "design.html"> design </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    .parallax {
-      margin: 0px;
-      /* The image used */
-      background-image: url(background3.jpg);
-      /* background-color: rgb(19,124,165); */
+        <div class = "parallax">
+            <table>
+                <tr>
+                  <th>
+                    <h1>Hi, I'm Patricia Tse!</h1>
+                  </th>
+                </tr>
+                <tr style= "height: 100px;">
+                  <th>
+                    <p id ="text"> </p>
+                  </th>
+                </tr>
+            </table>
+        </div>
 
-      /* Full height */
-      height: 100%;
+        <script type="text/javascript" src = "index-script.js"> </script>
 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+        <div class = "spiel">
+            <p> San Franciscan. Student. Foodie. Guitarist. Pianist. Pun-lover. Arist.<br> <br>Having been born and raised in San-Francisco, I have always known about the tech bubble.
+                Since I was very young, I knew that I wanted to become a scientist, engineer, or artist
+             since I loved using my hands and creating things. It wasn't until 8th grade/freshman year that I realized that I wanted to be computer scientist. <br> <br>
+            To me, computer science is a way for me to come with solutions to issues that plague communities, whether big or large. The thing that draws me most to computer science, is that I can be part of
+           the creative process of coming up with an idea, designing, programming, and testing. <br> <br> While I love coding, I also enjoy countless other hobbies such as art (digital and traditional), animating,
+          photography, basketball, volleyball, swimming, guitar, piano, composing music, and video editing. </p>
+      </div>
 
-      #button{
-        /* visibility: hidden; */
-        font-size: 20px;
-        padding: 10px;
-        text-align: center;
-        background-color: transparent;
-        color: white;
-        border: 2px solid white;
-        border-radius: 20px;
-        position:absolute;
-      }
 
-      #button:hover {
-        background-color: white;
-        color: rgb(19,124,165);
-      }
 
-      .centerize {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-      }
-    </style>
+        <footer class = "footer">
+            <div class = "footer_container">
 
-  </head>
-
-  <body>
-      <ul id = "nav">
-            <li class = "nav" style = "float: left; "><a style = "font-size: 30px; color: black " href = "index.html"> Patricia Tse </a> </li>
-            <li class = "nav"><a href = "index.html"> About Me</a> </li>
-            <li class = "nav"><a href = "contact.html"> Contact</a> </li>
-            <li class = "nav"><a href = "portfolio.html" onclick="popup()"> Projects </a></li>
-            <li class = "nav"><a href = "resume.html"> Resume</a> </li>
-            <li class = "nav"><a href = "design.html"> Design </a> </li>
-          </ul>
-
-    <div class = parallax>
-      <table style= "width:100%; height:auto;style= "text-align:center;"">
-        <tr>
-          <th>
-            <br>
-            <h1 style="color: white; text-align: center; font-size: 70px; line-height: 20px; margin-top:15%; ">Hi, I'm Patricia Tse! <br> <br></h1>
-          </th>
-        </tr>
-        <tr style= "height: 100px;">
-          <th>
-            <p class = "fade-scroll" id ="text" style="color: white; text-align: center; font-family: 'Roboto Mono', monospace;font-size: 30px;"> </p>
-            <br> <br>
-          </th>
-        </tr>
-    </table>
-    </div>
-
-    <p style = "margin: 10%; margin-top:5%; font-size: 20px; font-family: 'Roboto Mono', monospace; opacity: 80%;"> San Franciscan. Student. Foodie. Guitarist. Pianist. Pun-lover. Arist.<br> <br>Having been born and raised in San-Francisco, I have always known about the tech bubble. Since I was very young, I knew that I wanted to become a scientist, engineer, or artist
-     since I loved using my hands and creating things. It wasn't until 8th grade/freshman year that I realized that I wanted to be computer scientist. <br> <br>
-    To me, computer science is a way for me to come with solutions to issues that plague communities, whether big or large. The thing that draws me most to computer science, is that I can be part of
-   the creative process of coming up with an idea, designing, programming, and testing. <br> <br> While I love coding, I also enjoy countless other hobbies such as art (digital and traditional), animating,
-  photography, basketball, volleyball, swimming, guitar, piano, composing music, and video editing. </p>
-
-  <!-- <script src = "https://ajax.googleapis.com/ajax/ibs/jquery/3.1.0/jquery.min.js"></script> -->
-  <script tye= "text/javascript">
-  var words = [ "A Freshman at UC Berkeley", "San Franciscan", "Foodie", "Guitarist", "Pianist", "Pun-lover", "Artist", "Computer Scientist" ];
-
-  var i = 0;
-  var i2 = 0;
-  var _INTERVAL_VAL;
-  var _ELEMENT = document.querySelector("#text");
-
-  // Implements typing effect
-  function Type() {
-  	var text =  words[i].substring(0, i2 + 1);
-  	_ELEMENT.innerHTML = text;
-  	i2++;
-
-  	// If full sentence has been displayed then start to delete the sentence after some time
-  	if(text === words[i]) {
-  		clearInterval(_INTERVAL_VAL);
-  		setTimeout(function() {
-  			_INTERVAL_VAL = setInterval(Delete, 50);
-  		}, 1000);
-  	}
-  }
-
-  // Implements deleting effect
-  function Delete() {
-  	var text =  words[i].substring(0, i2 - 1);
-  	_ELEMENT.innerHTML = text;
-  	i2--;
-
-  	// If sentence has been deleted then start to display the next sentence
-  	if(text === '') {
-  		clearInterval(_INTERVAL_VAL);
-
-  		if(i == (words.length - 1))
-  			i = 0;
-  		else
-  			i++;
-  		i2 = 0;
-
-  		setTimeout(function() {
-  			_INTERVAL_VAL = setInterval(Type, 100);
-  		}, 200);
-  	}
-  }
-
-  _INTERVAL_VAL = setInterval(Type, 100);
-  </script>
-
-    <footer>
-      <p id="copyright"> Designed and Coded by Patricia Tse </p>
-      <a class = "social" href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <img src = "social_media/ig.png"> </a>
-      <a class = "social" href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <img src = "social_media/linkedin.png"> </a>
-      <a class = "social" href = "https://www.facebook.com/patriciakytse" target="_blank"> <img src = "social_media/fb.png"> </a>
-    </footer>
-  </body>
+                <ul class = "social_m_icons">
+                    <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
+                    <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
+                    <li><a class="border-animation"href = "https://www.facebook.com/patriciakytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
+                </ul>
+                <h3> I would love to get connected! <br>
+                    The best way to reach me is through email, so feel free to contact me @ </h3>
+                <div class = "nav_bar_links">
+                    <h1> <a href="mailto:patriciaktse@berkeley.edu"> patriciaktse@berkeley.edu </a> </h1>
+                </div>
+                <a id="contact"></a>
+            </div>
+        </footer>
+    </body>
 
 </html>
 
