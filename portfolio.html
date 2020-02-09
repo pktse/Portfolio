@@ -1,17 +1,24 @@
+<!-- used Isotope for photo gallery filter -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title> Portfolio </title>
 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "stylesheet" href = "general_style.css">
-    <script src = "script.js"> </script>
+
+    <link rel="stylesheet" href="css/portfolio_style.css">
+    <link rel="stylesheet" href="css/general_style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "portfolio-script.js"> </script>
+    <script src = "isotope.pkgd.min.js"> </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
   </head>
 
-  <body onload>
+  <body>
       <div class = "nav_bar">
           <div class = "nav_bar_container">
               <div class = "nav_bar_name">
@@ -22,111 +29,131 @@
                       <li><a href = "index.html"> about </a> </li>
                       <li><a href = "index.html#contact"> contact</a> </li>
                       <li><a href = "portfolio.html" onclick="popup()"> projects </a></li>
-                      <li><a href = "resume.html"> resume</a> </li>
-                      <li><a href = "design.html"> design </a> </li>
-                  </ul>
+                      <li><a href = "Resume3.pdf" target="_blank" download> resume</a> </li>
+                   </ul>
               </div>
           </div>
       </div>
 
 
-    <body>
-
-    <div class="row">
-      <div class="column">
-        <a href = "GWCportfolio.html">
-          <div class = "container">
-            <img class = "navImg" src="images/GWC/robot.JPG" style="width:100%"></a>
-            <div class="middle">
-              <a href = "GWCportfolio.html">
-                <div class="text"> Girls Who Code - <br>Summer Immersion Program</div>
-              </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+                <div class="portfolioFilter clearfix">
+                  <a href="#" data-filter="*" class="current">All Projects</a>
+                  <a href="#" data-filter=".general">general</a>
+                  <a href="#" data-filter=".design">design</a>
+                  <a href="#" data-filter=".engineering">engineering</a>
+                  <a href="#" data-filter=".data">data</a>
+                </div>
             </div>
-          </div>
-        </a>
-      </div>
-        <div class="column">
-          <a href = "Circuitsportfolio.html">
-            <div class = "container">
-              <img class = "navImg" src="images/circuits/circuits.jpg" style="width:100%"></a>
-              <div class="middle">
-                <a href = "Circuitsportfolio.html">
-                  <div class="text">Lick Wilmerding - <br>Circuits and Electronics</div>
+            <div class="portfolioContainer">
+
+                <div class = "general data engineering Container-item">
+                    <a href = "GWCportfolio.html">
+                    <div class="individual">
+                        <img src="images/portfolio/GWC.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> Girl's Who Code - SIP <br> 2018 </div>
+                        </div>
+                    </div>
                 </a>
-              </div>
+                </div>
+
+                <div class = "engineering Container-item">
+                    <a href = "Circuitsportfolio.html">
+                    <div class="individual">
+                        <img src="images/portfolio/circuits.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> LWHS - Circuits <br> 2017-2018 </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class = "engineering Container-item">
+                    <a href = "Computingportfolio.html">
+                    <div class="individual">
+                        <img src="images/Computing/computing.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> LWHS - Computing <br> 2017-2018 </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class = "engineering Container-item">
+                    <a href = "Metalportfolio.html">
+                    <div class="individual">
+                        <img src="images/portfolio/kinetics.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> LWHS - Kinetics <br> 2018 </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class = "engineering general Container-item">
+                    <a href = "AlgorithmPortfolio.html">
+                    <div class="individual">
+                        <img src="images/algorithm/algorithm.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> LWHS - Algorithm <br> 2019 </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class = "engineering Container-item">
+                    <a href = "WoodPortfolio.html">
+                    <div class="individual">
+                        <img src="images/wood/phoneholder.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> LWHS - Joinery + Turning <br> 2019 </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class = "design Container-item">
+                    <div class="individual">
+                        <img src="background3.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> Regents' and Chancellor's Scholars Association <br> 2019 - 2020 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "data Container-item">
+                    <div class="individual">
+                        <img src="background3.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"> Phi Beta Lambda - 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class = "engineering Container-item">
+                    <div class="individual">
+                        <img src="background3.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div> -->
+
+
             </div>
-          </a>
+          </div>
         </div>
-      </div>
 
-    <div class = "row">
-      <div class="column">
-        <a href = "Computingportfolio.html">
-          <div class = "container">
-            <img class = "navImg" src="images/Computing/computing.png" style="height:100%"></a>
-            <div class="middle">
-              <a href = "Computingportfolio.html">
-                <div class="text">Lick Wilmerding - <br>Computing</div>
-              </a>
+        <footer class = "footer">
+            <div class = "footer_container">
+                <ul class = "social_m_icons">
+                    <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
+                    <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
+                    <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
+                </ul>
+                <p> Designed and Coded by Patricia Tse </p>
             </div>
-          </div>
-        </a>
-      </div>
-      <div class="column">
-        <a href = "Metalportfolio.html">
-          <div class = "container">
-            <img class = "navImg" src="images/kinetics/metal.png" style="width:100%"></a>
-            <div class="middle">
-              <a href = "Metalportfolio.html">
-                <div class="text">Lick Wilmerding - <br> Metal Fabrications</div>
-              </a>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class = "row">
-      <div class="column">
-        <a href = "AlgorithmPortfolio.html">
-          <div class = "container">
-            <img class = "navImg" src="images/algorithm/algorithm.png" style="width:100%"></a>
-            <div class="middle">
-              <a href = "AlgorithmPortfolio.html">
-                <div class="text">Lick Wilmerding - <br>Algorithm + Digital</div>
-              </a>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="column">
-        <a href = "WoodPortfolio.html">
-          <div class = "container">
-            <img class = "navImg" src="images/wood/phoneholder.png" style="width:100%"></a>
-            <div class="middle">
-              <a href = "WoodPortfolio.html">
-                <div class="text">Lick Wilmerding - <br> Joinery and Turning </div>
-              </a>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
+        </footer>
     </body>
-    </html>
-
-
-    <footer class = "footer">
-        <div class = "footer_container">
-            <ul class = "social_m_icons">
-                <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
-                <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
-                <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
-            </ul>
-            <p> Designed and Coded by Patricia Tse </p>
-        </div>
-    </footer>
-  </body>
-
 </html>
