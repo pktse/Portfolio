@@ -18,6 +18,24 @@ a:focus {
     padding-bottom: 2%;
 }
 
+.btn2 {
+    margin-top: 1%;
+    padding-bottom: 2%;
+}
+
+.btn2 a{
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.btn2 a:hover{
+  border: 1px solid black;
+}
+
 .portfolioFilter a {
   color: #666;
   text-decoration: none;

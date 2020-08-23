@@ -5,7 +5,7 @@ body, html {
 .parallax {
 	margin: 0px;
 	/* The image used */
-	background-image: url(../background3.jpg);
+	background-image: url(../background4.png);
 	/* background-color: rgb(19,124,165); */
 
 	/* Full height */
@@ -42,9 +42,9 @@ body, html {
 
 .spiel p{
 	margin: 10%;
-	margin-top:15%;
+	margin-top:10%;
 	font-size: 20px;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Quicksand', sans-serif;
 	opacity: 80%;
 }
 
