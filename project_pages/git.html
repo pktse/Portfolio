@@ -21,21 +21,14 @@
 
   </head>
 
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $('#nav-container').load('nav.html');
+      });
+  </script>
+
   <body>
-      <div class = "nav_bar">
-          <div class = "nav_bar_container">
-              <div class = "nav_bar_name">
-                  <strong><a href = "../index.html"> patricia tse </a></strong>
-              </div>
-              <div class = "nav_bar_links">
-                  <ul>
-                      <li><a href = "../index.html"> about </a> </li>
-                      <li><a href = "../index.html#contact"> contact</a> </li>
-                      <li><a href = "../portfolio.html" onclick="popup()"> projects </a></li>
-                      <li><a href = "../_resume_.pdf" target="_blank" download> resume</a> </li>
-                   </ul>
-              </div>
-          </div>
+      <div id="nav-container">
       </div>
 
       <div class = "title">
@@ -78,6 +71,12 @@
                     <img style = "width: 100%; margin: auto; z-index: -2;"src = "../images/logo.png">
                 </div>
             </div>
+            <div style = "margin-bottom: 10%; margin-top: 5%;">
+                <div class="vid_container">
+                    <iframe src="https://www.youtube.com/embed/o3zBIP2Dxw4"
+                    frameborder="0" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
             <!-- <video width="100%" style = "margin-bottom: 10%;" controls>
                   <source src="../vids/SafeNet2_Demo.mp4">
                   Your browser does not support HTML5 video.
@@ -86,7 +85,7 @@
 
 
       </div>
-      <footer class = "footer">
+      <footer class = "footer" style = "float: right;">
           <div class = "footer_container">
               <ul class = "social_m_icons">
                   <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
