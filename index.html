@@ -6,15 +6,25 @@
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/index_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     </head>
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#nav-container').load('nav.html');
+        });
+    </script>
     <body>
-        <div class = "nav_bar">
+        <div id="nav-container">
+        </div>
+
+
+        <!-- <div class = "nav_bar">
             <div class = "nav_bar_container">
                 <div class = "nav_bar_name">
                     <strong><a href = "index.html"> patricia tse </a></strong>
@@ -28,7 +38,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class = "parallax">
             <table>

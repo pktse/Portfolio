@@ -17,29 +17,29 @@ body{
 }
 
 .title{
-	padding-top: 20%;
+	padding-top: 15%;
 	text-align:center;
-	/* margin-bottom: 5%; */
 }
 
 .title h1{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 320%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 220%;
 }
 
 .para {
-	width: 80%;
-	/* text-align: center; */
+	width: 70%;
 	margin: auto;
-	line-height: 175%;
+	line-height: 200%;
 }
 
 .para p{
+	font-family: 'Lato', sans-serif;
 	margin-top: 5%;
 	font-size: 125%;
 }
 
 .nav_bar {
+	font-family: 'Quicksand', sans-serif;
 	background: black;
 	padding: 13px 0;
 	position: fixed;
@@ -109,7 +109,8 @@ body{
 	background-color: black;
 	color: #eeeeee;
 	padding: 1px 0;
-	margin-bottom: 0pt;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer h3{
@@ -119,7 +120,8 @@ body{
 .footer_container {
 	text-align: center;
 	margin: 0 auto;
-	margin-bottom: 0pt;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer_container p{
@@ -139,8 +141,9 @@ body{
 	display: block;
 	height: 50px;
 	width: 50px;
-	position: relative;
+	/* position: relative; */
 	color: black;
+
 }
 
 .social_m_icons img{
