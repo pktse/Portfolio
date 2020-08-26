@@ -1,0 +1,154 @@
+<!-- used Isotope for photo gallery filter -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Collayt </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/portfolio_style.css">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/ss.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "../portfolio-script.js"> </script>
+    <script src = "../isotope.pkgd.min.js"> </script>
+    <script src = "../script.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $('#nav-container').load('../nav.html');
+      });
+  </script>
+
+  <body onload = "currentSlide(1)">
+      <div id="nav-container">
+      </div>
+
+      <div class = "title">
+          <h1> Collayt - Convergent </h1>
+          <h3 style = "font-style: italic;"> Front-End Web Developer  (2020 - Present) </h3>
+          <h3 style = "font-style: italic; margin-top: -1%;"> UI/UX Designer (2020 - Present) </h3>
+          <h3 style = "font-style: italic; margin-top: -1%;"> Graphic Designer (2020 - Present) </h3>
+      </div>
+      <div class = "para">
+            <p> Convergent is an interdisciplinary entrepreneurship club whose goal is to develop members'
+                learning and understanding of product development in our members through semester-long collaborative
+                projects. Collayt is a site and platform built by UC Berkeley students to help connect students
+                (and alumni) with others through academic opportunities such as side projects and study groups.
+
+            <p style = "text-decoration: underline; margin-bottom: -5%"> Front-End Web Developer: </p>
+            <p> With a team of 2 other people, I helped create the front-end of our site. Using HTML and CSS,
+                we coded the website, following the UI/UX that I had designed.
+            </p>
+
+            <p style = "text-decoration: underline; margin-bottom: -5%"> UI/UX design: </p>
+            <p> As the only UI/UX designer of the team, I was in charge of designing the UI/UX of the website using Adobe XD.
+                A big part of designing was the communication with the rest of the team, having to prepare presentations on the UI/UX designs.
+                In addition, I was also responsible for creating and running own UI/UX tests, collecting feedback from users, consolidating
+                and presenting results to the team.
+            </p>
+            <div class="btn2">
+                <a href="https://xd.adobe.com/view/0056282b-4075-48f1-8762-4321508161ec-5505/">Interact with the UI/UX</a>
+            </div>
+            <div style = "margin-bottom: 10%;">
+                <div class="vid_container" style = "margin-bottom: 10%;">
+                    <iframe src="https://www.youtube.com/embed/70UoPSz3xVw"
+                    frameborder="0" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
+
+            <div style = "width: 100%; margin-top: 20%;">
+                <p style = "text-decoration: underline; margin-bottom: -5%;"> Graphic designer: </p>
+                <p> Being the only graphic designer, I was in charge of creating banners, artwork, image place holders, and error pages using Procreate.
+                I also designed the logo using Adobe Illustrator and Procreate.
+
+                <div style = "width: 100%; margin-left: -15%; margin-top: 5%;">
+                    <div class="slideshow-container" style = "margin-top: 2%; width: 100%;" > <!-- Image Slideshow-->
+
+                        <div class="mySlides fade" >
+                          <div class="numbertext"  style = "margin-bottom: -5%;">1 / 8</div>
+                          <img src="../images/collayt/collayt logo.png" style="width:100%;">
+                          <div class="text"> Logo created using Adobe Illustrator </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext" style = "margin-bottom: -5%;">2 / 8</div>
+                          <img src="../images/collayt/Banner.png" style="width:100%;">
+                          <div class="text" > Banner image for most pages depicting Berkeley and the Bay </div>
+                        </div>
+
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 8</div>
+                          <img src="../images/collayt/Login.png" style="width:100%;">
+                          <div class="text"> Background image for login page depcting the Campanelli </div>
+                        </div>
+                        <div class="mySlides fade">
+                          <div class="numbertext">4 / 8</div>
+                          <img src="../images/collayt/Untitled_Artwork.png" style="width:80%; margin-left: 10%;">
+                          <div class="text"> Profile picture place holder </div>
+                        </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="../images/collayt/403-forbidden.png" style="width:100%;">
+                        <div class="text"> Error page for 403 forbidden </div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="../images/collayt/404-NotFound.PNG" style="width:100%;">
+                        <div class="text"> Error page for 404 not found </div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="../images/collayt/410-Gone.png" style="width:100%;">
+                        <div class="text"> Error page for 410 gone </div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="../images/collayt/500-serverError.png" style="width:100%;">
+                        <div class="text"> Error page for 500 server error </div>
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+
+                    <br>
+
+                    <div style="text-align:center;margin-bottom: 5%;">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+                      <span class="dot" onclick="currentSlide(6)"></span>
+                      <span class="dot" onclick="currentSlide(7)"></span>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+      <footer class = "footer" style = "margin-top: 10%;">
+          <div class = "footer_container">
+              <ul class = "social_m_icons">
+                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
+                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
+                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
+              </ul>
+              <p> Designed and Coded by Patricia Tse </p>
+          </div>
+      </footer>
+    </body>
+</html>
