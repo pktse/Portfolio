@@ -261,7 +261,7 @@ line {
   text-height: 20px;
   overflow: scroll;
   align-self: center;
-  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
 .video{
@@ -399,7 +399,7 @@ img {
 }
 
 .btn {
-  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace; */
   font: inherit;
   margin-left:10%;
   background-color: rgb(19,124,165);
@@ -417,7 +417,7 @@ img {
 
 #email {
   opacity: 0.5;
-  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace; */
   margin-left: 24%;
   font-size: 50px;
   text-align: center;
