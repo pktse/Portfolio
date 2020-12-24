@@ -213,6 +213,7 @@ body{
 	 animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
 	 animation-delay: calc(var(--animation-speed) / 5 * 2);
 }
+
  @keyframes beforeBorders {
 	 0% {
 		 top: calc(var(--border-width) * -1);
@@ -247,6 +248,7 @@ body{
 		 height: calc((var(--border-width) * 2) + 100%);
 	}
 }
+
  @keyframes afterBorders {
 	 0% {
 		 top: calc(var(--border-width) * -1);
@@ -280,6 +282,7 @@ body{
 		 width: calc(var(--border-width) + 50%);
 		 height: calc((var(--border-width) * 2) + 100%);
 	}
+
 }
  @keyframes borderColors {
 	 0% {
