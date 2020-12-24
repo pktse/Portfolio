@@ -26,6 +26,7 @@
   </script>
 
   <body onload = "currentSlide(1)">
+        <div id="loader" class="center"></div> 
       <div id="nav-container">
       </div>
 
@@ -69,6 +70,21 @@
               <p> Designed and Coded by Patricia Tse </p>
           </div>
       </footer>
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
     </body>
 
 </html>

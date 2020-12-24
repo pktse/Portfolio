@@ -13,14 +13,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src = "portfolio-script.js"> </script>
     <script src = "isotope.pkgd.min.js"> </script>
+        <script src = "js/loader.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   </head>
-
-  <body>
+<body">
+<div id="loader" class="center"></div> 
       <div class = "nav_bar">
           <div class = "nav_bar_container">
               <div class = "nav_bar_name">
@@ -158,5 +159,21 @@
                 <p> Designed and Coded by Patricia Tse </p>
             </div>
         </footer>
+        
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
     </body>
 </html>

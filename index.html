@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="loader" class="center"></div> 
         <div class = "nav_bar">
             <div class = "nav_bar_container">
                 <div class = "nav_bar_name">
@@ -75,6 +76,21 @@
                 <a id="contact"></a>
             </div>
         </footer>
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
     </body>
 
 </html>
