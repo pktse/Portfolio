@@ -41,14 +41,26 @@ body, html {
 	font-size: 30px;
 	margin-top: 10%;
 }
+.spiel{
+
+	/*background-color:white;*/
+	border-left: 5px solid black;
+	width: 75%;
+	margin-left: 10%;
+	padding-left: -5%;
+	height: 79%;
+	margin-bottom: 5%;
+	/*margin-top: 5%;*/
+}
 
 .spiel p{
+	/*padding-top: 10%;*/
 	margin: 10%;
-	margin-top:10%;
-	font-size: 20px;
+	font-size: 120%;
 	font-family: 'Lato', sans-serif;
 	opacity: 80%;
     letter-spacing: 0.03em;
+    line-height: 180%;
 }
 
 #button{
