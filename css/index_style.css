@@ -5,7 +5,7 @@ body, html {
 .parallax {
 	margin: 0px;
 	/* The image used */
-	background-image: url(../background4.png);
+	background-image: url(../images/background4.png);
 	/* background-color: rgb(19,124,165); */
 
 	/* Full height */
