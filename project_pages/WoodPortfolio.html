@@ -10,15 +10,15 @@
 
     <link rel="stylesheet" href="../css/portfolio_style.css">
     <link rel="stylesheet" href="../css/general_style.css">
-    <link rel = "stylesheet" href = "../css/ss.css">
+    <link rel="stylesheet" href="../css/ss.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src = "portfolio-script.js"> </script>
-    <script src = "isotope.pkgd.min.js"> </script>
+    <script src = "../portfolio-script.js"> </script>
+    <script src = "../isotope.pkgd.min.js"> </script>
+    <script src = "../script.js"> </script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <script type="text/javascript">
@@ -27,169 +27,91 @@
       });
   </script>
 
-  <body>
+  <body onload = "currentSlide(1)">
         <div id="loader" class="center"></div> 
       <div id="nav-container">
       </div>
 
-    <div class = "portfolioTxt">
-      <h1> Lick Wilmerding High School - Technical Arts</h1>
-      <h2> Wood: Joinery and Turning</h2>
-      <h2 style = "color: red; text-align:center"> Currently In Progress </h2>
-    </div>
-
-      <div class="slideshow-container">
-
-        <!-- <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/phoneholder1.png" style="width:100%">
-          <div class="text">Wooden Phone Holder</div>
-        </div> -->
-
-        <!-- <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/speaker.jpeg" style="width:100%">
-          <div class="text">Bluetooth MDF speaker</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/wireless.jpg" style="width:100%">
-          <div class="text">Wireless internet-connected display</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/solar.jpg" style="width:100%">
-          <div class="text">Solar powered charging box</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class = "title">
+          <h1> Lick Wilmerding High School - Technical Arts </h1>
+          <h3 style = "font-style: italic;"> Wood: Joinery and Turning </h3>
+      </div>
+      <div class = "para">
+            <p>  I took this class in the spring semester of my senior year at Lick-Wilmerding High School. I wanted to take this class because for most of my shop classes, I had used CNC machines for the majority of my project, but in the wood shop, we will primarly use lathes,
+          band saws, table saws, edge sanders, plannar, CNC router, laser cutters, 3d printers, plasma cutter, and other tools.
+              <br> <br>
+              Unlike the other technical arts courses which were more software or CNC focused, I was able to learn more handskills like applying major wood joinery techniques (finger, dove, butt and miter joints) and wood turning.
+  </p>
+            <p style = "text-decoration: underline;"> My Projects: </p>
 
       </div>
-      <br>
 
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        -->
+
+      <div style = "width: 55%; margin-left:5%;">
+          <div class="slideshow-container" style = "margin-top: 2%; width: 100%;" > <!-- Image Slideshow-->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../images/wood/phoneholder.png" style="width:102%;">
+              <div class="text" style = "width: 75%; left: 150%;">  <div style = "font-size: 100%;" > For the Phone Holder Project, with a partner, we were assigned a project to make a phone holder than fit within a 8x8x8 box, was less than one pound, is functional, and uses at least 2 CNC machines and 2 materials. We used a router on a block of wood and 3d printed the backing.
+
+            <br> <br></div>
+
+                <div class="btn2">
+                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vSn_RHQNZ1Gv9bHd0VO20uO0OuqxI1-6oGXR8N4P6dRnsINnfIWEQ_UDoQ510M-7rVkcAYI06irZyN_/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                </div></div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../images/wood/joining.JPG" style="width:102%;">
+              <div class="text" style = "width: 75%; left: 150%;"> 
+              <div style = "font-size: 100%;" >For the Joinery and Turning Personal Project, we had to create something that involved using joinery techniques and turning. This could be done with one project or with 2 seperate projects. This is my joinery project, a jewelry box for my mother with a secret compartment in the bottom.
+              <br> <br></div>
+
+                <div class="btn2">
+                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../images/wood/turning.JPG" style="width:102%;">
+              <div class="text" style = "width: 75%; left: 150%;"> 
+              <div style = "font-size: 100%;" >This is the turning part of the personal project requirement, a tumbler for myself.
+                <br> <br></div>
+
+                <div class="btn2">
+                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQn2U8tpCimfbYHrrtXj9Aa02bdIETeAVVxHxqYkFYmpM-MoNxGn8SbOj03Cj6uFnWE0xpefZAwj9KU/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                </div>
+              </div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <br>
+
+          <div style="text-align:center;margin-bottom: 5%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
       </div>
 
-    <div class = "portfolioTxt">
-      <p> I took this class in the spring semester of my senior year at Lick-Wilmerding High School. I wanted to take this class because for most of my shop classes, I had used CNC machines for the majority of my project;
-         I'm super intereseted at joinery and turning because it'll give me the oppurtunity to feel the materials I'm working with in way that I can't when I just use CNC machines. In the class, we use lathes,
-          band saws, table saws, edge sanders, plannar, CNC router, laser cutters, 3d printers, plasma cutter, and other tools. <br> <br> To refamiliarize ourselves with the shop tools, our first project was a collaborative project
-           where we had to create a phone holder. We then spent the rest of the semester preparing for ourtwo individual projects, one of which asks them to apply major wood joinery techniques (finger, dove, butt and miter joints).
-           The second focuses on wood turning.
-    </p>
-
-       <ul class = "projects">
-       <button class="accordion"> Phone Holder </button>
-       <div class="panel">
-         <br>
-         <img class = "gameImg" src = "images/wood/phoneholder1.png">
-         <p> With a partner, we were assigned a project to make a phone holder than fit within a 8x8x8 box, was less than one pound, is functional, and uses at least 2 CNC machines and 2 materials. <br><br>
-         We began the project by brainstorming ideas. After choosing an idea, we began building. Using the 3d printer, we created a hat. Using the CNC, we cut out the wood base. Lastly, we used the laser cutter
-       to cut out teeth. We then glued them all together. </p> <br>
-       <h3> initial designs </h3>
-       <table style="width:100%">
-         <tr>
-           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/design1.png"> </th>
-           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/design2.png"> </th>
-           <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/wood/phone-holder/design3.png"> </th>
-          </tr>
-          </table>
-          <table>
-        <tr>
-          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/design4.JPG"> </th>
-          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/wood/phone-holder/design5.JPG"> </th>
-          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/design6.JPG"> </th>
-          <th><img style = "width: 90%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);"class = "gameImg" src = "images/wood/phone-holder/design7.JPG"> </th>
-         </tr>
-       </table>
-       <h3> final design </h3>
-       <table style="width:100%">
-         <tr>
-           <th><img style = "width: 60%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/final1.png"> </th>
-           <th><img style = "width: 60%; height: auto; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" class = "gameImg" src = "images/wood/phone-holder/final2.png"> </th>
-          </tr>
-        </table>
-        <h3> Logs: </h3>
-        <h4> 1/30/19 </h4>
-        <p>Today, we chose and sanded a piece of 2-inch thick wood. We also finished doing the rhino for the teeth and hat. we laser cutted the tooth prototypes and hat
-          prototype. At the same time, we worked on the rhino file for the head/base component and the hat. We’ll hopefully start cncing next class.
-        </p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/wood/phone-holder/log1.png">
-          <br>
-        <hr>
-
-        <h4> 2/1/19 </h4>
-        <p>I created a copy of Kyler’s head file. I also had to cut and join a piece of wood since we didn’t want to waste too much. While waiting for the glue to dry,
-          I finished designing and started 3d printing the hat component. I also cnc-ed the wood component after it dried. Because the drill bit was not long enough,
-          we have to manually cut and sand the remaining piece.
-        </p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/wood/phone-holder/log2.jpg">
-          <br>
-        <hr>
-
-        <h4> 2/6/19 </h4>
-        <p>During tutorial, we cut out the head with a bandsaw and sanded away the remaining bits. The 3d print for the hat was successful. On the other hand, we
-          miscalculated the depth of the mouth; as a result, when we put the phone in, it doesn’t touch the hat. As a result, we decided to use the teeth as a
-          platform for the phone to rest on. To make sure that it would be stable enough, we had to cut out thin pieces of wood to support the teeth. After laser-cutting
-          the teeth, we spent the remainder of the class cutting the wood and super gluing the teeth and wood to the base piece. Because we finished early, we started to
-           plan for additions we could add during next class- ears that would function as pencil holders.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/wood/phone-holder/log3.png">
-          <br>
-        <hr>
-
-        <h4> 2/8/19 </h4>
-        <p>Before the class, we realized that there was a requirement that our phone holder had to weight less than 1 pound. After checking and finding that it
-          weighed 1.4 pounds, we decided to cut off the bottom of the piece. Unfortunately, the bandsaw broke during the process. As a result, we had to add in
-          wood filler and cut the remaining wood with a hand saw. During that time, we were also able to cut and sand the ears. We finished the class by gluing
-          on the hat and ears. We filled in the cracks between the ears and head with some wood filler. We’ll have to come in before next class to sand away some
-           filler and cover the rest in beeswax.</p>
-        <img style = "width: 500px; padding: 1px; border-radius: 0%; border: 1px solid rgb(19,124,165);" src = "images/wood/phone-holder/log4.png">
-          <br>
-        <hr>
-
-
-       </div>
-
-       </ul>
-    </div>
-
-    <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-    </script>
-
-    <br> <br> <br> <br>
-
-    <footer class = "footer">
-        <div class = "footer_container">
-            <ul class = "social_m_icons">
-                <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
-                <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
-                <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
-            </ul>
-            <p> Designed and Coded by Patricia Tse </p>
-        </div>
-    </footer>
+      <footer class = "footer">
+          <div class = "footer_container">
+              <ul class = "social_m_icons">
+                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
+                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
+                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
+              </ul>
+              <p> Designed and Coded by Patricia Tse </p>
+          </div>
+      </footer>
         <script>
             document.onreadystatechange = function() { 
                 if (document.readyState !== "complete") { 
@@ -205,6 +127,5 @@
                 } 
             }; 
         </script>
-  </body>
-
+    </body>
 </html>
