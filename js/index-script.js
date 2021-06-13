@@ -1,5 +1,5 @@
 //<script src = "https://ajax.googleapis.com/ajax/ibs/jquery/3.1.0/jquery.min.js"></script>
-var words = [ "a sophomore at UC Berkeley", "San Franciscan", "serial hobbyist", "computer scientist"];
+var words = [ "a junior at UC Berkeley", "San Franciscan", "serial hobbyist", "computer scientist"];
 
 var i = 0;
 var j = 0;
