@@ -1,155 +1,124 @@
-<!-- used Isotope for photo gallery filter -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Algorithms </title>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Algorithms</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link rel="stylesheet" href="../css/portfolio_style.css">
-    <link rel="stylesheet" href="../css/general_style.css">
-    <link rel="stylesheet" href="../css/ss.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src = "../js/isotope.pkgd.min.js"> </script>
-    <script src = "../js/script.js"> </script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QHYTCN5V40');
-</script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <script type="text/javascript">
-      $(document).ready(function() {
-      $('#nav-container').load('../nav.html');
-      });
-  </script>
+  <link 
+  rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/boxicons.min.css" rel="stylesheet">
+  <link href="../css/glightbox.min.css" rel="stylesheet">
+  <link href="../css/remixicon.css" rel="stylesheet">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet">
+  <link rel = "stylesheet" href = "../css/temp.css">
 
-  <body onload = "currentSlide(1)">
-        <div id="loader" class="center"></div> 
-      <div id="nav-container">
-      </div>
+</head>
 
-      <div class = "title">
-          <h1> Lick Wilmerding High School - Technical Arts </h1>
-          <h3 style = "font-style: italic;"> Circuits and Electronics: Analog and Digital  (Fall 2016) </h3>
-          <h3 style = "font-style: italic; margin-top: -1%;"> Algorithm to Object (Spring 2019) </h3>
-      </div>
-      <div class = "para">
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Algorithm to Object</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="../images/algorithm/self_iteration.jpg" alt="">
+                  <div style = "font-size: 100%;" > For the Self Iteration Project, we were tasked to create an object that includes a geometric pattern that represent us. 
+                  </div>
+        
+                      <div class="btn2">
+                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vS40R3ou61S70P4n-nZi2ynwyXdj4jr8R7Vk5C7tgAsU8NqMBiVJ4L3oLIashklIUZ7Yw4UXoN9O9Yi/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                      </div>
+                        
+                </div>
+
+                
+                <div class="swiper-slide">
+                  <img src="../images/algorithm/tutorial.png" alt="">
+                  <div style = "font-size: 100%;" >For the Grasshopper Tutorial Project, we had to manipulate the Grasshopper tools to create unique shapes.
+                    </div>
+      
+                      <div class="btn2">
+                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQmquPNyDeYEWDApV3PKbgndlzYH0G_w5tbxmxjR1SxnNZE0Ze7FCMfyh7oNT-K2uNegn3f1T3mJWo1/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the other tutorials</a>
+                      </div>
+                      
+                </div>
+
+                
+                <div class="swiper-slide">
+                  <img src="../images/algorithm/3d.png" alt="">
+                  <div style = "font-size: 100%;" >For the Grasshopper 3d Print Project, we had to design a 3d printable object using the tools we had learned from Grasshopper. 
+                    </div>
+    
+                    <div class="btn2">
+                      <a href="https://docs.google.com/presentation/d/e/2PACX-1vQvdz_-aUq4NzB8bavyO-Flc6y4SorSKbmyQFF3hBD5Ch20xr6twfiinujUEZsyXAl1oGmWLI7KntDX/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                    </div>                  
+                </div>
+
+                
+                <div class="swiper-slide">
+                  <img src="../images/algorithm/shapesways.jpg" alt="">
+                  <div style = "font-size: 100%;" >For the Grasshopper Shapesways Project, we had to design something that would be sent to a metal 3d printing company while staying under the maximum of $100 such that the piece is 80% created by Grasshopper.
+                    </div>
+    
+                    <div class="btn2">
+                      <a href="https://docs.google.com/presentation/d/e/2PACX-1vQYJpShTtyC2AqR07WOzsKvygWWlUzar5qN7B5a9K2Ga9YLIiGhkYBcso64SsPxrk6syre1JGDojAyI/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
+                    </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Dates</strong>: Spring 2019 </h3>
+                <li><strong>Skillset</strong>: CAD, Rhino, CNC </li>
+            </ul>
+
             <p>  I took one semester of Algorithm to Object in my senior year at Lick-Wilmerding High School. We learned how to create algorithms in Rhino (a 3d modelling software) using Grasshopper. With these algorithms, we were able to generate various shapes and patterns that would normally be very tedius to do by hand.
-              <br> <br>
-              In the past, whenever I would take Technical Arts courses, we would have to manually create everything in Rhino one shape at a time, but through this course, I was able to learn ways to automate the generation for me so that it would not only be much more quick, but also more exact + precise.
   </p>
-            <p style = "text-decoration: underline;"> My Projects: </p>
+            
+          </div>
+
+        </div>
 
       </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="../js/noframework.waypoints.js"></script>
+<script src="../js/purecounter_vanilla.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/glightbox.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src = "../js/index-script.js"> </script>
+<script type="text/javascript" src = "../js/temp.js"> </script>
 
 
-      <div style = "width: 55%; margin-left:5%;">
-          <div class="slideshow-container" style = "margin-top: 2%; width: 100%;" > <!-- Image Slideshow-->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 4</div>
-              <img src="../images/algorithm/self_iteration.jpg" style="width:102%;">
-              <div class="text" style = "width: 75%; left: 150%;">  <div style = "font-size: 100%;" > For the Self Iteration Project, we were tasked to create an object that includes a geometric pattern that represent us. 
+</body>
 
-            <br> <br></div>
-
-                <div class="btn2">
-                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vS40R3ou61S70P4n-nZi2ynwyXdj4jr8R7Vk5C7tgAsU8NqMBiVJ4L3oLIashklIUZ7Yw4UXoN9O9Yi/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
-                </div></div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 4</div>
-              <img src="../images/algorithm/tutorial.png" style="width:102%;">
-              <div class="text" style = "width: 75%; left: 150%;"> 
-              <div style = "font-size: 100%;" >For the Grasshopper Tutorial Project, we had to manipulate the Grasshopper tools to create unique shapes.
-              <br> <br></div>
-
-                <div class="btn2">
-                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQmquPNyDeYEWDApV3PKbgndlzYH0G_w5tbxmxjR1SxnNZE0Ze7FCMfyh7oNT-K2uNegn3f1T3mJWo1/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the other tutorials</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 4</div>
-              <img src="../images/algorithm/3d.png" style="width:102%;">
-              <div class="text" style = "width: 75%; left: 150%;"> 
-              <div style = "font-size: 100%;" >For the Grasshopper 3d Print Project, we had to design a 3d printable object using the tools we had learned from Grasshopper. 
-                <br> <br></div>
-
-                <div class="btn2">
-                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQvdz_-aUq4NzB8bavyO-Flc6y4SorSKbmyQFF3hBD5Ch20xr6twfiinujUEZsyXAl1oGmWLI7KntDX/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="mySlides fade">
-              <div class="numbertext">4 / 4</div>
-              <img src="../images/algorithm/shapesways.jpg" style="width:102%;">
-              <div class="text" style = "width: 75%; left: 150%;"> 
-              <div style = "font-size: 100%;" >For the Grasshopper Shapesways Project, we had to design something that would be sent to a metal 3d printing company while staying under the maximum of $100 such that the piece is 80% created by Grasshopper.
-                <br> <br></div>
-
-                <div class="btn2">
-                  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQYJpShTtyC2AqR07WOzsKvygWWlUzar5qN7B5a9K2Ga9YLIiGhkYBcso64SsPxrk6syre1JGDojAyI/pub?start=false&loop=false&delayms=3000" target=”_blank”>Check out the process</a>
-                </div>
-              </div>
-            </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          </div>
-
-          <br>
-
-          <div style="text-align:center;margin-bottom: 5%;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-          </div>
-      </div>
-
-      <footer class = "footer">
-          <div class = "footer_container">
-              <ul class = "social_m_icons">
-                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
-                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
-                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
-              </ul>
-              <p> Designed and Coded by Patricia Tse </p>
-          </div>
-      </footer>
-        <script>
-            document.onreadystatechange = function() { 
-                if (document.readyState !== "complete") { 
-                    document.querySelector( 
-                      "body").style.visibility = "hidden"; 
-                    document.querySelector( 
-                      "#loader").style.visibility = "visible"; 
-                } else { 
-                    document.querySelector( 
-                      "#loader").style.display = "none"; 
-                    document.querySelector( 
-                      "body").style.visibility = "visible"; 
-                } 
-            }; 
-        </script>
-    </body>
 </html>

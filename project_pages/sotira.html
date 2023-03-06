@@ -1,93 +1,91 @@
-<!-- used Isotope for photo gallery filter -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Sotira </title>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Sotira</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link rel="stylesheet" href="../css/portfolio_style.css">
-    <link rel="stylesheet" href="../css/general_style.css">
-    <link rel="stylesheet" href="../css/ss.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-     <script src = "../js/isotope.pkgd.min.js"> </script>
-    <script src = "../js/script.js"> </script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  gtag('config', 'G-QHYTCN5V40');
-</script>
-  <script type="text/javascript">
-      $(document).ready(function() {
-      $('#nav-container').load('../nav.html');
-      });
-  </script>
+  <link 
+  rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/boxicons.min.css" rel="stylesheet">
+  <link href="../css/glightbox.min.css" rel="stylesheet">
+  <link href="../css/remixicon.css" rel="stylesheet">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet">
+  <link rel = "stylesheet" href = "../css/temp.css">
 
-  <body onload = "currentSlide(1)">
-        <div id="loader" class="center"></div> 
-      <div id="nav-container">
-      </div>
+</head>
 
-      <div class = "title">
-          <h1> Sotira </h1>
-          <h3 style = "font-style: italic;"> Full-Stack Web Developer  (2020 - Present) </h3>
-      </div>
-      <div class = "para">
-            <p> Convergent is an interdisciplinary entrepreneurship club whose goal is to develop members' learning and understanding of product development in our members through semester-long collaborative projects. My group and I were in the Convergent Accelerator Program during the majority of our development stage for Sotira. 
-            <br> <br> <a href = "https://www.ocf.berkeley.edu/~luw/sotira/"> Sotira </a> is a site built by UC Berkeley students to help crowdsoruce algorithms for specific Berkeley classes. These algorithms range from advanced mathematics to graph search and can be coded and submitted directly through the site. </p>
+<body>
 
-            <!-- <div style = "float: right; width:40%; height: 200%; margin-top: 10%; margin-left: 5%;">
-              <div style = "margin-bottom: 10%;">
-                  <div class="vid_container" style = "margin-bottom: 10%">
-                      <iframe src="https://www.youtube.com/embed/70UoPSz3xVw"
-                      frameborder="0" allowfullscreen class="video"></iframe>
-                  </div>
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Sotira</h2>
+
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="../images/sotira/first.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../images/sotira/ad.jpg" alt="">
+                </div>
+
               </div>
-            </div> -->
+              <div class="swiper-pagination"></div>
+            </div>
 
-            <p style = "text-decoration: underline; margin-top: 5%; font-size: 100%;"> My roles included: </p>
-              <ul style = "width: 90%; margin: auto; margin-bottom: 3%;">
-                  <li> creating the frontend of our site using HTML and CSS </li>
-                  <li> writing algorithms for classes including algorithms like Chinese Reminader Theorem, floating pointer number conversion, generative truth tables, etc. </li>
-                  <li> collaborating with group members to implement a working debugger and IDE directly onto the website </li>
-                </ul>
-                
-      </div>
-      <footer class = "footer" style = "margin-top: 10%;">
-          <div class = "footer_container">
-              <ul class = "social_m_icons">
-                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
-                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
-                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
-              </ul>
-              <p> Designed and Coded by Patricia Tse </p>
           </div>
-      </footer>
-        <script>
-            document.onreadystatechange = function() { 
-                if (document.readyState !== "complete") { 
-                    document.querySelector( 
-                      "body").style.visibility = "hidden"; 
-                    document.querySelector( 
-                      "#loader").style.visibility = "visible"; 
-                } else { 
-                    document.querySelector( 
-                      "#loader").style.display = "none"; 
-                    document.querySelector( 
-                      "body").style.visibility = "visible"; 
-                } 
-            }; 
-        </script>
-    </body>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Role</strong>: Fullstack Developer</li>
+              <li><strong>Dates</strong>: February 2021 - Present</li>
+              <li><strong>Skillset</strong>: React, Typescript/Javascript, HTML, MongoDB </li>
+            </ul>
+
+            <p> <a href = "https://sotira.co/"target = "_blank" >Sotira </a> is a fintech SaaS startup and financial tracking, optimization, and pricing discovery tool to help side hustlers streamline and maximize their income streams and profits.</p>
+
+              <p> As a full-stack web developer, my role included: </p> 
+              <ul>
+                  <li style="margin-left:2em"> develop frontend and create dynamic visualizers and landing pages using <strong>React</strong>  </li>
+                  <li style="margin-left:2em"> work on backend by creating schema models and routes in <strong>TypeScript</strong> and to modify data in <strong>MongoDB</strong> </li>
+              </ul>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="../js/noframework.waypoints.js"></script>
+<script src="../js/purecounter_vanilla.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/glightbox.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src = "../js/index-script.js"> </script>
+<script type="text/javascript" src = "../js/temp.js"> </script>
+
+
+</body>
+
 </html>

@@ -1,0 +1,148 @@
+<!-- used Isotope for photo gallery filter -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> PBL </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/portfolio_style.css">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/ss.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "../js/isotope.pkgd.min.js"> </script>
+    <script src = "../js/script.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QHYTCN5V40');
+</script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $('#nav-container').load('../nav.html');
+      });
+  </script>
+
+  <body onload = "currentSlide(1)">
+        <div id="loader" class="center"></div> 
+      <div id="nav-container">
+      </div>
+
+      <div class = "title">
+          <h1> Phi Beta Lambda </h1>
+          <h3 style = "font-style: italic;"> Tech Fall Analyst (Fall 2019) </h3>
+      </div>
+      <div class = "para">
+            <p> Berkeley Phi Beta Lambda (PBL) is a chapter of Future Business Leaders of America-Phi Beta Lambda, the largest student business organization in the nation.
+                Berkeley PBL helps members build the necessary technical and interpersonal skillset to succeed in wide range of business pursuits and intersections. Within the club,
+                 there are multiple committes ranging from Client Teams to the Technology committee, to the Finance committee.
+            </p>
+            <p> The Tech Committee focuses on bridging the gap between software and business, providing a foundational understanding of how technology works within corporations.
+                Through assignments, members are able to develop their programming skills and apply it to professional settings.
+
+            </p>
+            <p style = "text-decoration: underline;"> As a fall analyst, my role included: </p>
+            <ul style = "width: 90%; margin: auto">
+                <li> Using Python and Panda to analyze Facebook data and APIs and draw correlations between usage and user </li>
+                <li> applying my knowledge of Panda to machine learning, creating an algorithm that predicts real estate prices </li>
+                <li> creating an algorithm that would generate an optimal table of time slots based on the preferences of members which was used by 65+ members </li>
+                <li> using Selenium and web scraping to automate the process of booking library study rooms </li>
+            </ul>
+      </div>
+
+      <div style = "width: 70%; margin-left:5%;">
+          <div class="slideshow-container" style = "margin-top: 2%; width: 100%;" > <!-- Image Slideshow-->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="../images/pbl/download.png" style="width:102%;">
+              <div class="text"> Analyzed relation between iris type and petal length using Python and Panda </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="../images/pbl/download-1.png" style="width:103%;">
+              <div class="text">Used NumPy and Panda to do linear regression and estimate the price of a house based on different attributes. In this graph, it is comparing price to the % lower status of the population </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="../images/pbl/download-3.png" style="width:71%; margin-left:15%;">
+              <div class="text">Used NumPy, Panda and Seaborn to create multiple kinds of graphs that classify phone prices. Here, we have a jointplot</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 7</div>
+              <img src="../images/pbl/newplot.png" style="width:110%;">
+              <div class="text">Used NumPy, Panda and Seaborn to create multiple kinds of graphs that classify phone prices. Here, we have a distribution plot</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 7</div>
+              <img src="../images/pbl/newplot copy 2.png" style="width:82%; margin-left:5%;">
+              <div class="text">Used NumPy, Panda and Seaborn to create multiple kinds of graphs that classify phone prices. Here, we have parallel categories</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 7</div>
+              <img src="../images/pbl/newplot copy.png" style="width:82%; margin-left:5%;">
+              <div class="text">Used NumPy, Panda and Seaborn to create multiple kinds of graphs that classify phone prices. Here, we have a 3D scatterplot</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 7</div>
+              <img src="../images/pbl/download-4.png" style="width:106%; ">
+              <div class="text">Used NetworkX to create networks based on cost, capacities, and demands </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <br>
+
+          <div style="text-align:center;margin-bottom: 5%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+      </div>
+
+      <footer class = "footer">
+          <div class = "footer_container">
+              <ul class = "social_m_icons">
+                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
+                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
+                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
+              </ul>
+              <p> Designed and Coded by Patricia Tse </p>
+          </div>
+      </footer>
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
+    </body>
+</html>

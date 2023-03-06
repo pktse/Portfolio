@@ -1,0 +1,170 @@
+<!-- used Isotope for photo gallery filter -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Art </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/art_style.css">
+    <link rel="stylesheet" href="css/general_style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "js/portfolio-script.js"> </script>
+    <script src = "js/isotope.pkgd.min.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QHYTCN5V40');
+</script>
+<body">
+<div id="loader" class="center"></div> 
+      <div class = "nav_bar">
+          <div class = "nav_bar_container">
+              <div class = "nav_bar_name">
+                  <strong><a href = "index.html"> patricia tse </a></strong>
+              </div>
+              <div class = "nav_bar_links">
+                  <ul>
+                      <li><a href = "index.html#about"> about </a> </li>
+                      <li><a href = "index.html#contact"> contact</a> </li>
+                      <li><a href = "portfolio.html" onclick="popup()"> projects </a></li>
+                      <li><a href = "images/_resume.pdf" target="_blank" download> resume</a> </li>
+                      <li>
+                            <div class="dropdown">
+                            <button class="dropbtn">other 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href = "art.html" onclick="popup()"> art </a>
+                              <a href = "music.html" onclick="popup()"> music </a>
+                            </div>
+                          </div> 
+                        </li>
+                   </ul>
+              </div>
+          </div>
+      </div>
+
+
+        <div class="container">
+          <div class="row">
+
+              <div class = "title" style = "margin-top: -10%;s">
+                <h1> Art Portfolio</h1>
+              </div>
+              <div class = "para">
+                <p>  Outside of coding, I also really enjoy art! This includes traditional sketching and acrylic painting. In additional to traditional art, I also do digital art, using software like Procreate for the iPad and Adobe Illustrator. I also did all the art on this website!
+                  <br> <br>
+        
+                </p>
+              </div>
+
+              <a href = "https://www.instagram.com/pkaytea/" target="_blank" > <img style= "width: 5%;" src = "images/art/ig.png">  </a>
+
+
+              <h3 > instagram:  <a href = "https://www.instagram.com/pkaytea/" target = "_blank" style = "font-style: italic; ">@pkaytea </a></h3>
+
+
+            <div class="portfolioContainer">
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/triangle_flower.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/parrot_circle.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/beachwave.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/boardwalk.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/bridge.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/desert.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/desertroad.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/island.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+                <div class = "Container-item">
+                    <div class="individual">
+                        <img src="images/art/mt_fuji.png" alt="Avatar" class="image">
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <footer class = "footer">
+            <div class = "footer_container">
+                <ul class = "social_m_icons">
+                    <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
+                    <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
+                    <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
+                </ul>
+                <p> Designed and Coded by Patricia Tse </p>
+            </div>
+        </footer>
+        
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
+    </body>
+</html>

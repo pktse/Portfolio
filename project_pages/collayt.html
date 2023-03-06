@@ -1,187 +1,147 @@
-<!-- used Isotope for photo gallery filter -->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Collayt </title>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="../css/portfolio_style.css">
-    <link rel="stylesheet" href="../css/general_style.css">
-    <link rel="stylesheet" href="../css/ss.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-     <script src = "../js/isotope.pkgd.min.js"> </script>
-    <script src = "../js/script.js"> </script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QHYTCN5V40');
-</script>
-  <script type="text/javascript">
-      $(document).ready(function() {
-      $('#nav-container').load('../nav.html');
-      });
-  </script>
-
-  <body onload = "currentSlide(1)">
-        <div id="loader" class="center"></div> 
-      <div id="nav-container">
-      </div>
-
-      <div class = "title">
-          <h1> Convergent - Collayt </h1>
-          <h3 style = "font-style: italic;"> Front-End Web Developer  (2020 - Present) </h3>
-          <h3 style = "font-style: italic; margin-top: -1%;"> UI/UX Designer (2020 - Present) </h3>
-          <h3 style = "font-style: italic; margin-top: -1%;"> Graphic Designer (2020 - Present) </h3>
-      </div>
-      <div class = "para">
-            <p> Convergent is an interdisciplinary entrepreneurship club whose goal is to develop members' learning and understanding of product development in our members through semester-long collaborative projects. My group and I were in the Convergent Accelerator Program during the majority of our development stage for Sotira. 
-            <br> <br> <a href = "https://collayt.wl.r.appspot.com/"> Collayt </a> is a site and platform built by UC Berkeley students to help connect students (and alumni) with others through academic opportunities such as side projects and study groups. </p>
-
-            <div style = "float: right; width:40%; height: 200%; margin-top: 10%; margin-left: 5%;">
-              <div style = "margin-bottom: 10%;">
-                  <div class="vid_container" style = "margin-bottom: 10%">
-                      <iframe src="https://www.youtube.com/embed/70UoPSz3xVw"
-                      frameborder="0" allowfullscreen class="video"></iframe>
-                  </div>
-              </div>
-              <div style = "text-align: center" class="btn2">
-                  <a href="https://xd.adobe.com/view/0056282b-4075-48f1-8762-4321508161ec-5505/">Interact with the UI/UX</a>
-              </div>
-            </div>
-            <p style = "text-decoration: underline; margin-top: 5%; font-size: 100%;"> My roles included: </p>
-              <ul style = "width: 90%; margin: auto; margin-bottom: 3%;">
-                <li> Front-End Web Developer </li>
-                <ul>
-                  <li style="margin-left:2em"> creating the frontend of our site using HTML and CSS </li>
-                </ul>
-                <li> UI/UX Design Lead </li>
-                <ul>
-                  <li style="margin-left:2em"> designing the UI/UX of the website using Adobe XD </li>
-                  <li style="margin-left:2em"> maintaining consistent communication with the team, preparing presentations on the UI/UX designs </li>
-                  <li style="margin-left:2em"> creating and running UI/UX tests, collecting feedback from users, consolidating
-                and presenting results to the team.</li>
-                </ul>
-                <li> Graphic Designer </li>
-                <ul>
-                  <li style="margin-left:2em"> creating banners, artwork, and error pages using Procreate. </li>
-                  <li style="margin-left:2em"> designed the logo using Adobe Illustrator and Procreate. </li>
-                  </ul>
-                </ul>
-
-            <div style = "width: 100%; margin-top: 10%;">
-                
-
-                <div style = "width: 100%; margin-left: -15%; margin-top: 5%;">
-                    <div class="slideshow-container" style = "margin-top: 2%; width: 100%;" > <!-- Image Slideshow-->
-
-                        <div class="mySlides fade" >
-                          <div class="numbertext"  style = "margin-bottom: -5%;">1 / 8</div>
-                          <img src="../images/collayt/collayt logo.png" style="width:100%;">
-                          <div class="text"> Logo created using Adobe Illustrator </div>
-                        </div>
-
-                        <div class="mySlides fade">
-                          <div class="numbertext" style = "margin-bottom: -5%;">2 / 8</div>
-                          <img src="../images/collayt/Banner.png" style="width:100%;">
-                          <div class="text" > Banner image for most pages depicting Berkeley and the Bay </div>
-                        </div>
+<head>
+  <title>Collayt</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 8</div>
-                          <img src="../images/collayt/Login.png" style="width:100%;">
-                          <div class="text"> Background image for login page depcting the Campanelli </div>
-                        </div>
-                        <div class="mySlides fade">
-                          <div class="numbertext">4 / 8</div>
-                          <img src="../images/collayt/Untitled_Artwork.png" style="width:80%; margin-left: 10%;">
-                          <div class="text"> Profile picture place holder </div>
-                        </div>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-                      <div class="mySlides fade">
-                        <div class="numbertext">5 / 8</div>
-                        <img src="../images/collayt/403-forbidden.png" style="width:100%;">
-                        <div class="text"> Error page for 403 forbidden </div>
-                      </div>
+  <link 
+  rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/boxicons.min.css" rel="stylesheet">
+  <link href="../css/glightbox.min.css" rel="stylesheet">
+  <link href="../css/remixicon.css" rel="stylesheet">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet">
+  <link rel = "stylesheet" href = "../css/temp.css">
 
-                      <div class="mySlides fade">
-                        <div class="numbertext">6 / 8</div>
-                        <img src="../images/collayt/404-NotFound.PNG" style="width:100%;">
-                        <div class="text"> Error page for 404 not found </div>
-                      </div>
+</head>
 
-                      <div class="mySlides fade">
-                        <div class="numbertext">7 / 8</div>
-                        <img src="../images/collayt/410-Gone.png" style="width:100%;">
-                        <div class="text"> Error page for 410 gone </div>
-                      </div>
+<body>
 
-                      <div class="mySlides fade">
-                        <div class="numbertext">8 / 8</div>
-                        <img src="../images/collayt/500-serverError.png" style="width:100%;">
-                        <div class="text"> Error page for 500 server error </div>
-                      </div>
+  <main id="main">
 
-                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-                    </div>
+        <div class="row">
 
-                    <br>
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Collayt</h2>
 
-                    <div style="text-align:center;margin-bottom: 5%;">
-                      <span class="dot" onclick="currentSlide(1)"></span>
-                      <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>
-                      <span class="dot" onclick="currentSlide(5)"></span>
-                      <span class="dot" onclick="currentSlide(6)"></span>
-                      <span class="dot" onclick="currentSlide(7)"></span>
-                      <span class="dot" onclick="currentSlide(7)"></span>
-                    </div>
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img style = "background-color: white;" style = "width: 100%; height: auto;padding: 2vw;" src="../images/collayt/collayt logo.png" alt="">
+                  <div style = "font-size: 100%;" >Logo created using Adobe Illustrator
+                  </div>   
                 </div>
+
+                <!-- <div class="swiper-slide">
+                  <img src="../images/collayt/Banner.png" alt="">
+                  <div style = "font-size: 100%;" >Banner image for most pages depicting Berkeley and the Bay
+                  </div>   
+                </div> -->
+
+                <div class="swiper-slide">
+                  <img src="../images/collayt/Login.png" alt="">
+                  <div style = "font-size: 100%;" >Background image for login page depcting the Campanelli
+                  </div>   
+                </div>
+                
+                <!-- <div class="swiper-slide">
+                  <img src="../images/collayt/Untitled_Artwork.png" alt="">
+                  <div style = "font-size: 100%;" >Profile picture place holder
+                  </div>   
+                </div> -->
+
+                <div class="swiper-slide">
+                  <img src="../images/collayt/403-forbidden.png" alt="">
+                  <div style = "font-size: 100%;" >Error page for 403 forbidden
+                  </div>   
+                </div>
+
+
+                <div class="swiper-slide">
+                  <img src="../images/collayt/404-NotFound.PNG" alt="">
+                  <div style = "font-size: 100%;" >Error page for 404 not found
+                  </div>   
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="../images/collayt/410-Gone.png" alt="">
+                  <div style = "font-size: 100%;" >Error page for 410 gone
+                  </div>   
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="../images/collayt/500-serverError.png" alt="">
+                  <div style = "font-size: 100%;" >Error page for 500 server error
+                  </div>   
+                </div>
+
+                <div class="swiper-slide">
+                  <img style = "width: 100%;" src="../images/collayt/ui.png" alt="">
+              <div style = "text-align: center" class="btn2">
+                <a href="https://xd.adobe.com/view/0056282b-4075-48f1-8762-4321508161ec-5505/" target = "_blank">Interact with the UI/UX</a>
+            </div><div style = "text-align: center" class="btn2">
+              <a href="https://www.youtube.com/embed/70UoPSz3xVw" target = "_blank">Watch the UI demo</a>
+          </div>
+                </div>
+               
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li> <strong>Role</strong>: Frontend Developer, UI/UX Designer, Graphic Designer</li>
+              <li><strong>Dates</strong>: 2020 - 2021 </li>
+              <li><strong>Skillset</strong>: HTML, CSS, Adobe XD, Adobe Illustrator </li>
+            </ul>
+
+            <p>  <a href = "https://collayt.wl.r.appspot.com/" target = "_blank"> Collayt </a> is a site and platform built by UC Berkeley students to help connect students (and alumni) with others through academic opportunities such as side projects and study groups. </p>
+  
+              <p> My roles included: </p>
+              <ul >
+                  <li style="margin-left:2em"> creating the frontend of our site using HTML and CSS (Frontend developer) </li>
+                  <li style="margin-left:2em"> designing the UI/UX of the website using Adobe XD while creating and running UI/UX tests, collecting feedback from users, consolidating
+                and presenting results to the team. (UI/UX Design Lead) </li>
+                  <li style="margin-left:2em"> creating logo, banners, artwork, and error pages using Procreate and Adobe Illustrator. (Graphic Designer) </li>
+                </ul>
 
             
+          </div>
+
+        </div>
 
       </div>
-      <footer class = "footer" style = "margin-top: 10%;">
-          <div class = "footer_container">
-              <ul class = "social_m_icons">
-                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
-                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
-                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
-              </ul>
-              <p> Designed and Coded by Patricia Tse </p>
-          </div>
-      </footer>
-        <script>
-            document.onreadystatechange = function() { 
-                if (document.readyState !== "complete") { 
-                    document.querySelector( 
-                      "body").style.visibility = "hidden"; 
-                    document.querySelector( 
-                      "#loader").style.visibility = "visible"; 
-                } else { 
-                    document.querySelector( 
-                      "#loader").style.display = "none"; 
-                    document.querySelector( 
-                      "body").style.visibility = "visible"; 
-                } 
-            }; 
-        </script>
-    </body>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="../js/noframework.waypoints.js"></script>
+<script src="../js/purecounter_vanilla.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/glightbox.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src = "../js/index-script.js"> </script>
+<script type="text/javascript" src = "../js/temp.js"> </script>
+
+
+</body>
+
 </html>

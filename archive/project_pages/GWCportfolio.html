@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Girls Who Code </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/portfolio_style.css">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/ss.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "../js/isotope.pkgd.min.js"> </script>
+    <script src = "../js/script.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QHYTCN5V40');
+</script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $('#nav-container').load('../nav.html');
+      });
+  </script>
+
+  <body onload = "currentSlide(1)">
+        <div id="loader" class="center"></div> 
+      <div id="nav-container">
+      </div>
+
+      <div class = "title">
+          <h1> Girls Who Code - Summer Immersion Program </h1>
+          <h3 style = "font-style: italic;"> (2018)</h3>
+      </div>
+      <div class = "para">
+            <p> Girls Who Code is a non-profit organization that focuses on empowering young girls and closing the gender gap in the Tech field. In the Summer Immersion Program (SIP), for seven weeks, a group of 20 girls goes to
+         a commany that hosts the program and learns about coding, courage, and sisterhood. My SIP took place at Moody's Analytics in San Francisco. Each week,
+         we either learned about a new topic or a new language. We made around one project a day and went through a total of three programming languages, learning about Scratch, Python, Arduino, web development, then data analysis. We were also
+         able to attend a bunch of fieldtrips like Twitch, Google, Paypal, and Autodesk. In fact, we were the one SIP group chosen to present before the GWC board. </p>
+
+            <p style = "text-decoration: underline; padding-top: 5%; margin-bottom: -2%;"> Final Project: </p>
+            <div style = "float: right; width: 50%;margin-left: 5%;">
+              <img style = "width: 100%;  margin-bottom: 2%;" src = "../images/GWC/game.png">
+              <div style = "text-align: center;" class="btn2">
+                  <a href="https://pktse.github.io/GWCSIPGame1/">Play our game!</a>
+              </div>
+            </div>
+            
+        <p style = "font-size: 100%; line-height: 200%;"> For our final projects, we were required to work in groups of 3-4 to create a website, app or game that would benefit the community. For our game, we wanted to tackle the issue about how society places stereotypes on people based on their biological
+        sex. We did this by created an infinte
+        2-d game that went through three stages of life: baby, teen, and adult to really emphasize the absurdity of these expectations. We chose to name the game, "LIvES", because it aims to reflect a lot of the trends and patterns that are seen in real life. 
+        <br> <br>
+        When the player starts the game, they are randomly given a character (male or female, skin color, and hair color), reflecting how in real life,
+        people can't choose their biological sex, skin color, or hair color. To gain points, the player must collect things that society deems as acceptable, just as people must follow society's rules to succeed in life.
+        When the player reaches a certain number of points, they are allowed to continue in the next stage of life. If they collect the wrong item 3 times, they lose 1 life, and when they lose 3 lives, the game ends,
+        just as people are set back when they don't follow what society says. In addition, we changed the scoring system so that the boys are allowed to collect more things, reflecting
+        how in real life, boys are given an advantage simply because of their sex. Once the player finishes the adult stage, they complete one generation and are sent back to the baby
+        stage. We chose to make this game infinite because it reflects how this cycle will keep repeating if there are no changes. In addition, to make the game harder, everytime the player completes a generation, the game speeds up.  </p>
+
+      </div>
+      <footer class = "footer" style = "margin-top: 10%;">
+          <div class = "footer_container">
+              <ul class = "social_m_icons">
+                  <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "../social_media/ig.png"> </div> </a></li>
+                  <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/linkedin.png"> </div></a></li>
+                  <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "../social_media/fb.png"> </div></a></li>
+              </ul>
+              <p> Designed and Coded by Patricia Tse </p>
+          </div>
+      </footer>
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script>
+    </body>
+
+</html>
