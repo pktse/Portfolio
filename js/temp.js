@@ -119,7 +119,8 @@ let skilsContent = select('.skills-content');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.filter-recent' 
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);

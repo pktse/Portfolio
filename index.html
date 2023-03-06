@@ -14,6 +14,7 @@
         <link href="css/remixicon.css" rel="stylesheet">
         <link href="css/swiper-bundle.min.css" rel="stylesheet">
         <link rel = "stylesheet" href = "css/temp.css">
+        <script src="js/jquery-3.6.3.min.js"></script>
         
     </head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -276,7 +277,7 @@
 
 
       <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div id = "resizeThis" class="container">
     
             <div id = "portfolio">
                 <h2> portfolio <span></span></h2>
@@ -286,10 +287,8 @@
           <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-recent">recent</li>
+                <li id = "clickThis" data-filter=".filter-recent" class="filter-active">recent</li>
                 <li data-filter=".filter-programming">programming</li>
-                <li data-filter=".filter-data">data</li>
                 <li data-filter=".filter-design">design</li>
                 <li data-filter=".filter-engineering">engineering</li>
                 <li data-filter=".filter-personal">personal project</li>
@@ -327,7 +326,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-programming filter-personal filter-recent" >
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming filter-personal filter-recent" >
               <div class="portfolio-wrap">
                   <a href="project_pages/markov.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/markov.jpeg" class="img-fluid" alt="">
@@ -341,7 +340,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-programming filter-recent">
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming filter-recent">
               <div class="portfolio-wrap">
                 <a href="project_pages/webdev.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/RCSA.png" class="img-fluid" alt="">
@@ -355,7 +354,7 @@
               </div>
             </div>
     
-            <div class="col-lg-4 col-md-6 portfolio-item filter-programming filter-design filter-recent">
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming filter-design filter-recent">
               <div class="portfolio-wrap">
                 <a href="project_pages/collayt.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/collayt.png" class="img-fluid" alt="">
@@ -369,7 +368,7 @@
               </div>
             </div>
     
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-design">
               <div class="portfolio-wrap">
                 <a href="project_pages/mm.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/RCSA.png" class="img-fluid" alt="">
@@ -383,7 +382,7 @@
               </div>
             </div>
     
-            <div class="col-lg-4 col-md-6 portfolio-item filter-programming filter-data">
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming">
               <div class="portfolio-wrap">
                 <a href="project_pages/pbl.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/PBL.png" class="img-fluid" alt="">
@@ -391,13 +390,13 @@
                     <h4>Phi Beta Lambda</h4>
                     <p>School Club</p>
                     <p><em>2019</em></p>
-                    <h9><em>Data Science</em></h9>
+                    <h9><em>Data Science + Pandas</em></h9>
                 </div>
             </a>
               </div>
             </div>
     
-            <div class="col-lg-4 col-md-6 portfolio-item filter-engineering filter-programming archive">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-engineering archive">
               <div class="portfolio-wrap">
                 <a href="project_pages/AlgorithmPortfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/algorithm2.png" class="img-fluid" alt="">
@@ -411,20 +410,36 @@
               </div>
             </div>
     
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-engineering archive" style = "display: none;">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-engineering archive ">
               <div class="portfolio-wrap">
+                <a href="project_pages/WoodPortfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/turning2.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Card 3</h4>
-                  <p>Card</p>
-                  <div class="portfolio-links">
-                    <a href="project_pages/WoodPortfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                  </div>
+                <h4>Joinery and Turning</h4>
+                <p>School Class</p>
+                <p><em>2019</em></p>
+                <h9><em>Wood Working + CAD</em></h9>
                 </div>
+              </a>
               </div>
-            </div> -->
+            </div>
     
-            <div class="col-lg-4 col-md-6 portfolio-item filter-programming filter-design archive">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-engineering archive" >
+              <div class="portfolio-wrap">
+                <a href="project_pages/Metalportfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
+                <img src="images/portfolio/kinetics.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                <h4>Kinetics</h4>
+                <p>School Class</p>
+                <p><em>2019</em></p>
+                <h9><em>CNC + CAD</em></h9>
+                </div>
+              </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming filter-design">
               <div class="portfolio-wrap">
                 <a href="project_pages/git.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                 <img src="images/portfolio/GIT.png" class="img-fluid" alt="">
@@ -439,7 +454,7 @@
             </div>
     
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-data filter-programming archive" >
+            <div class="col-lg-4 col-md-6 portfolio-item  filter-programming" >
                 <div class="portfolio-wrap">
                     <a href="project_pages/GWCportfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                   <img src="images/portfolio/GWC2.png" class="img-fluid" alt="">
@@ -452,35 +467,9 @@
                 </a>
                 </div>
               </div>
-      
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-design archive" style = "display: none;">
-                <div class="portfolio-wrap">
-                  <img src="images/portfolio/HH2.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Card 3</h4>
-                    <p>Card</p>
-                    <div class="portfolio-links">
-                      <a href="project_pages/hh.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col-lg-4 col-md-6 portfolio-item filter-engineering archive" style = "display: none;">
-                <div class="portfolio-wrap">
-                  <img src="images/portfolio/kinetics.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                    <div class="portfolio-links">
-                      <a href="project_pages/Metalportfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
 
 
-              <div class="col-lg-4 col-md-6 portfolio-item filter-programming archive" >
+              <div class="col-lg-4 col-md-6 portfolio-item  filter-programming" >
                 <div class="portfolio-wrap">
                     <a href="project_pages/Computingportfolio.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">
                   <img src="images/portfolio/computing.png" class="img-fluid" alt="">
@@ -502,7 +491,7 @@
                     <h4>Circuits and Electronics</h4>
                     <p>School Class</p>
                     <p><em>2016, 2017</em></p>
-                    <h9><em>Circuits + Arduino</em></h9>
+                    <h9><em>Circuits + Arduino + CAD</em></h9>
                   </div>
                   </a>
                 </div>
