@@ -115,12 +115,16 @@ let skilsContent = select('.skills-content');
 
 
   window.addEventListener('load', () => {
+    var temp = ".filter-recent"
+    if (document.title == "Art") {
+      temp = "*"
+    }
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows',
-        filter: '.filter-recent' 
+        filter: temp
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -139,6 +143,7 @@ let skilsContent = select('.skills-content');
     }
 
   });
+  
 
   /**
    * Initiate portfolio lightbox 
