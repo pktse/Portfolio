@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(150,150,150);
+  transition-duration: 1s;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  border-style: solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 199, 126, 1);
+}
+
 * {box-sizing: border-box;
     color: white;}
 
@@ -47,6 +68,15 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5vh;
     margin: 5vh 0vh 0vh 0vh;
+}
+
+.hover-opacity {
+  opacity: 70%;
+  transition-duration: 0.6s;
+}
+
+.hover-opacity:hover {
+  opacity: 100%;
 }
 
 h1 {
@@ -154,7 +184,7 @@ h6 {
 }
 
 #navbar #logo:hover {
-    color: rgb(171, 133, 84);
+    color: rgb(255, 199, 126);
 } 
 
 #navbar a.active {
@@ -182,11 +212,12 @@ h6 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(171, 133, 84);
+    background-color: rgb(255, 199, 126);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
   
+
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -297,8 +328,7 @@ h6 {
     /* margin: 1vw; */
     width:2vw;
     margin-right: 1vw;
-  }
-  
+  }  
 
   .meCard {
     width: 100%;
@@ -462,6 +492,9 @@ h6 {
   display: inline-block;
   transition: 0.3s;
 }
+
+
+
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: rgb(255, 199, 126);

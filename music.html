@@ -1,103 +1,80 @@
-<!-- used Isotope for photo gallery filter -->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Music </title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title> Music </title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="css/art_style.css">
-    <link rel="stylesheet" href="css/general_style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src = "js/portfolio-script.js"> </script>
-    <script src = "js/isotope.pkgd.min.js"> </script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/boxicons.min.css" rel="stylesheet">
+  <link href="css/glightbox.min.css" rel="stylesheet">
+  <link href="css/remixicon.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/temp.css">
+
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHYTCN5V40"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-QHYTCN5V40');
 </script>
-<body">
-<div id="loader" class="center"></div> 
-      <div class = "nav_bar">
-          <div class = "nav_bar_container">
-              <div class = "nav_bar_name">
-                  <strong><a href = "index.html"> patricia tse </a></strong>
-              </div>
-              <div class = "nav_bar_links">
-                  <ul>
-                      <li><a href = "index.html#about"> about </a> </li>
-                      <li><a href = "index.html#contact"> contact</a> </li>
-                      <li><a href = "portfolio.html" onclick="popup()"> projects </a></li>
-                      <li><a href = "images/_resume.pdf" target="_blank" download> resume</a> </li>
-                      <li>
-                            <div class="dropdown">
-                            <button class="dropbtn">other 
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href = "art.html" onclick="popup()"> art </a>
-                              <a href = "music.html" onclick="popup()"> music </a>
-                            </div>
-                          </div> 
-                        </li>
-                   </ul>
-              </div>
-          </div>
+
+<body id="top">
+  <div class="section">
+
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div id="portfolio" class="artInfo">
+          <h2> music portfolio <span></span></h2>
+          <h1> MY MUSIC  &nbsp; <a href="https://www.youtube.com/@pkaytea" target="_blank"
+              style="font-size: small; text-transform: lowercase;"> <img style="width: 5%;" src="social_media/youtube.png">
+              <em>@pkaytea</em> </a></h1>
+        </div>
+
+        <p> <em> Another hobby I have is music — I mostly like listening to music, but I also occasionally make music for fun. I grew up taking piano lessons (like every asian kiddo :P) which helped form my foundational understanding of music. I primarily use Garageband to put together pieces (I don't have many finished pieces as my motivation isn't a very steady one). 
+            <br> <br></em>
+        </p>
+
       </div>
 
-        <div class="container">
-          <div class="row">
 
-              <div class = "title" style = "margin-top: -10%;s">
-                <h1> Music Portfolio</h1>
-              </div>
-              <div class = "para">
-                <p>  Having taken piano classes for 6 years, I also dabble a bit in music. With my foundations in piano, I am also a self-taught guitarist and violinist (albiet not the best). If I have time, I also enjoy doing original compositions, whether that be recording an improv session or slapping random things together on Garageband!
-                  <br> <br>
-                <h3 style = "font-style: italic; "> Playlist of original compositions (w original artwork): </h3>
-                </p>
+      <div class="row portfolio-container">
 
-                <iframe style = "margin-bottom: 10%;" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLneOyrAklfi7JnWiNg31e0Mfh91vPNBiT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+        <div class="col-lg-3 col-md-4 portfolio-item">
+          <div class="portfolio-wrap">
+            <a href="https://youtu.be/-fgBGHoT38k" target="_blank" > 
+              <img src="images/art/pine.png" class="img-fluid" alt="">
+              <div class="portfolio-info"> Evergreen</div>
+            </a>
           </div>
         </div>
 
-        <footer class = "footer">
-            <div class = "footer_container">
-                <ul class = "social_m_icons">
-                    <li><a class="border-animation"href = "https://www.instagram.com/patriciaktse/?hl=en" target="_blank"> <div class="border-animation__inner"> <img src = "social_media/ig.png"> </div> </a></li>
-                    <li><a class="border-animation"href = "https://www.linkedin.com/in/patriciaktse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/linkedin.png"> </div></a></li>
-                    <li><a class="border-animation"href = "https://www.facebook.com/pkytse" target="_blank"> <div class="border-animation__inner"><img src = "social_media/fb.png"> </div></a></li>
-                </ul>
-                <p> Designed and Coded by Patricia Tse </p>
-            </div>
-        </footer>
-        
-        <script>
-            document.onreadystatechange = function() { 
-                if (document.readyState !== "complete") { 
-                    document.querySelector( 
-                      "body").style.visibility = "hidden"; 
-                    document.querySelector( 
-                      "#loader").style.visibility = "visible"; 
-                } else { 
-                    document.querySelector( 
-                      "#loader").style.display = "none"; 
-                    document.querySelector( 
-                      "body").style.visibility = "visible"; 
-                } 
-            }; 
-        </script>
-    </body>
+      </div>
+      <!-- <button type="button" onclick="archive()" id = "archiveButton">Show Archived Projects</button> -->
+
+  </div>
+  </section>
+
+  </div>
+
+  <script src="js/noframework.waypoints.js"></script>
+  <script src="js/purecounter_vanilla.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <!-- <script src="js/isotope.pkgd.min.js"></script> -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/temp.js"> </script>
+
+</body>
+
 </html>
