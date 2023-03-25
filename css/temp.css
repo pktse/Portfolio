@@ -126,6 +126,58 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+#navbar2 {
+  overflow: hidden;
+  background-color: #111111;
+  padding: 3vh 0vh 2vw 3vw;
+  text-align: left;
+  transition: 0.6s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar2 a {
+  float: left;
+  color: gray;
+  padding: 1vh;
+  text-decoration: none;
+  font-size: 1.5vw; 
+  line-height: 1vw;
+}
+
+#navbar2 p {
+    color: rgb(225, 225, 225);
+  }
+
+
+
+#navbar2 #logo {
+  font-size: 2vw;
+  font-weight: bold;
+  transition: 0.6s;
+  color: rgb(255, 199, 126);
+}
+
+/* #navbar2 a:hover {
+    transition: 0.6s;
+    color: white;
+}
+
+#navbar2 #logo:hover {
+    color: rgb(255, 199, 126);
+} 
+
+#navbar2 a.active {
+  color: rgb(255, 199, 126);
+} */
+
+#navbar2-right {
+    padding-left: 60vw;
+    transition: 0.6s;
+}
+
 #navbar {
   overflow: hidden;
   background-color: #111111;
@@ -171,6 +223,7 @@ h6 {
   font-size: 5vw;
   font-weight: bold;
   transition: 0.6s;
+  color: rgb(255, 199, 126);
 }
 
 #navbar #text {
@@ -183,13 +236,13 @@ h6 {
     color: white;
 }
 
-#navbar #logo:hover {
+/* #navbar #logo:hover {
     color: rgb(255, 199, 126);
-} 
+}  */
 
-#navbar a.active {
+/* #navbar a.active {
   color: rgb(255, 199, 126);
-}
+} */
 
 #navbar-right {
     padding-left: 40vw;
@@ -383,8 +436,8 @@ h6 {
 }
 
 .portfolio .portfolio-link:hover {
-  color: white;
-  transition: .6s;
+  color: rgb(255, 199, 126);
+  transition: .3s;
 }
 
 .portfolio #portfolio-flters {
@@ -639,6 +692,7 @@ h6 {
 
 .portfolio-details a:hover{
   color: rgb(255, 199, 126);
+  transition:.3s;
 }
 
 .portfolio-details .container {
