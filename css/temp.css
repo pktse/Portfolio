@@ -160,11 +160,11 @@ h6 {
   color: rgb(255, 199, 126);
 }
 
-/* #navbar2 a:hover {
+#navbar2 a:hover {
     transition: 0.6s;
     color: white;
 }
-
+/* 
 #navbar2 #logo:hover {
     color: rgb(255, 199, 126);
 } 
