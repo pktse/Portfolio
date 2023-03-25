@@ -115,10 +115,7 @@ let skilsContent = select('.skills-content');
 
 
   window.addEventListener('load', () => {
-    var temp = ".filter-recent"
-    if (document.title == "Art") {
-      temp = "*"
-    }
+    var temp = ".filter-feature"
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
