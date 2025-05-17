@@ -14,11 +14,10 @@
 </script>
 <script>
    window.onload = function () {
-    e.preventDefault();
     grecaptcha.enterprise.ready(async () => {
       const token = await grecaptcha.enterprise.execute('6LfT2DwrAAAAALpY4OwH_pEK9dFCmFMK2WjWOAii', {action: 'VISIT'});
       print(token)
-    });
+
   }
 </script>
   <title> Patricia Tse </title>
