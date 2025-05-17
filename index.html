@@ -12,6 +12,15 @@
 
   gtag('config', 'G-QHYTCN5V40');
 </script>
+<script>
+   window.onload = function () {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LfT2DwrAAAAALpY4OwH_pEK9dFCmFMK2WjWOAii', {action: 'VISIT'});
+      print(token)
+    });
+  }
+</script>
   <title> Patricia Tse </title>
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
