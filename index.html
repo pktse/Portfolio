@@ -16,8 +16,7 @@
    window.onload = function () {
     grecaptcha.enterprise.ready(async () => {
       const token = await grecaptcha.enterprise.execute('6LfT2DwrAAAAALpY4OwH_pEK9dFCmFMK2WjWOAii', {action: 'VISIT'});
-      print(token)
-
+      console.log(token)
     });
   }
 </script>
